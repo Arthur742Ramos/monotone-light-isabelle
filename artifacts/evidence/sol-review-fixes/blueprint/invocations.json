@@ -1,0 +1,102 @@
+[
+  {
+    "name": "lint",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "lint",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"
+    ],
+    "started": "2026-10-11T20:39:33.919117+00:00",
+    "finished": "2026-10-11T20:39:38.782585+00:00",
+    "exit_status": 0
+  },
+  {
+    "name": "check",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "check",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle",
+      "--strict",
+      "--fail-on",
+      "problem",
+      "--timeout",
+      "600",
+      "--jobs",
+      "1"
+    ],
+    "started": "2026-10-11T20:39:38.785587+00:00",
+    "finished": "2026-10-11T20:42:06.714695+00:00",
+    "exit_status": 0
+  },
+  {
+    "name": "snapshot",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "snapshot",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle",
+      "--json"
+    ],
+    "started": "2026-10-11T20:42:06.753694+00:00",
+    "finished": "2026-10-11T20:42:46.540515+00:00",
+    "exit_status": 0
+  },
+  {
+    "name": "report",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "report",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"
+    ],
+    "started": "2026-10-11T20:42:46.548321+00:00",
+    "finished": "2026-10-11T20:43:26.897698+00:00",
+    "exit_status": 0
+  },
+  {
+    "name": "graph",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "graph",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"
+    ],
+    "started": "2026-10-11T20:43:26.915604+00:00",
+    "finished": "2026-10-11T20:44:09.372819+00:00",
+    "exit_status": 0
+  },
+  {
+    "name": "web",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "web",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"
+    ],
+    "started": "2026-10-11T20:44:09.376599+00:00",
+    "finished": "2026-10-11T20:46:16.085307+00:00",
+    "exit_status": 0
+  },
+  {
+    "name": "mcp",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\blueprint-mcp-final.py"
+    ],
+    "exit_status": 0,
+    "status_generated_at": "2026-10-11T20:55:19.461972Z",
+    "recorded_at": "2026-10-11T20:57:04.886035+00:00",
+    "verified_metrics": {
+      "node_count": 7,
+      "formal_target_count": 7,
+      "proved_count": 7,
+      "found_count": 0,
+      "problem_count": 0,
+      "stale_count": 0,
+      "has_cycles": false,
+      "coverage_percent": 100
+    }
+  }
+]

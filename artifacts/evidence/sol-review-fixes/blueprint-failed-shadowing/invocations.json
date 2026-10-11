@@ -1,0 +1,33 @@
+[
+  {
+    "name": "lint",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "lint",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"
+    ],
+    "started": "2026-10-11T20:37:02.854938+00:00",
+    "finished": "2026-10-11T20:37:06.414628+00:00",
+    "exit_status": 0
+  },
+  {
+    "name": "check",
+    "command": [
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\run-blueprint-native-check.py",
+      "check",
+      "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle",
+      "--strict",
+      "--fail-on",
+      "problem",
+      "--timeout",
+      "600",
+      "--jobs",
+      "1"
+    ],
+    "started": "2026-10-11T20:37:06.421628+00:00",
+    "finished": "2026-10-11T20:37:30.553384+00:00",
+    "exit_status": 4
+  }
+]

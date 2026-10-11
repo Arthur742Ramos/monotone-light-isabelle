@@ -1,0 +1,7 @@
+Monotone_Light/
+Monotone_Light/document/
+Monotone_Light/LICENSE
+Monotone_Light/Monotone_Light.thy
+Monotone_Light/ROOT
+Monotone_Light/document/root.bib
+Monotone_Light/document/root.tex

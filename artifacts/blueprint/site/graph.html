@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Monotone-light factorization - Graph</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8fafc" />
+  <meta name="generator" content="IsabelleBlueprint" />
+  <link rel="stylesheet" href="static/style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
+    integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    id="MathJax-script"
+  ></script>
+  <script defer src="static/filters.js"></script>
+  <script defer src="static/graph.js"></script>
+  <script defer src="static/trends.js"></script>
+  <script defer src="static/theme.js"></script>
+</head>
+<body data-offline="false">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Monotone-light factorization</a>
+      <nav aria-label="Primary navigation">
+        <div class="nav-links">
+          <a href="index.html" class="" >Overview</a>
+          <a href="graph.html" class="active" aria-current="page">Graph</a>
+          <a href="status.html" class="" >Status</a>
+          <a href="tasks.html" class="" >Tasks</a>
+          <a href="roadmap.html" class="" >Roadmap</a>
+          <a href="trends.html" class="" >Trends</a>
+        </div>
+      </nav>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span data-theme-label>Theme</span>
+      </button>
+    </div>
+  </header>
+  <main id="main-content" class="container">
+<h1>Dependency graph</h1>
+
+<p class="lede">
+  Each node is labelled by its current formal status. Arrows go from a result
+  to the lemmas it depends on. Select a node to inspect its local neighborhood.
+</p>
+
+<div class="graph-toolbar" data-graph-filters aria-label="Graph controls">
+  <fieldset class="graph-filter-set">
+    <legend class="graph-toolbar-label">Show formal status</legend>
+    <div class="graph-filter-options">
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="missing"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #9ca3af;" aria-hidden="true"></span>
+          <span>missing</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="named"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #f59e0b;" aria-hidden="true"></span>
+          <span>named</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="not_found"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #ef4444;" aria-hidden="true"></span>
+          <span>not_found</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="found"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #3b82f6;" aria-hidden="true"></span>
+          <span>found</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="proved"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #10b981;" aria-hidden="true"></span>
+          <span>proved</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="tainted"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #a855f7;" aria-hidden="true"></span>
+          <span>tainted</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="stale"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #fbbf24;" aria-hidden="true"></span>
+          <span>stale</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="broken"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #dc2626;" aria-hidden="true"></span>
+          <span>broken</span>
+        </label>
+        <label class="graph-filter-pill">
+          <input
+            type="checkbox"
+            data-graph-formal="failed_check"
+            checked
+          />
+          <span class="graph-filter-swatch" style="background: #dc2626;" aria-hidden="true"></span>
+          <span>failed_check</span>
+        </label>
+    </div>
+  </fieldset>
+  <button type="button" class="button button-secondary graph-filter-reset" data-graph-filters-reset>Reset filters</button>
+  <span class="graph-filter-count" data-graph-filters-count aria-live="polite"></span>
+</div>
+<div class="graph-focus" data-graph-focus aria-live="polite" hidden>
+  <div>
+    <span class="eyebrow">Selected node</span>
+    <strong data-graph-focus-title></strong>
+    <p data-graph-focus-summary></p>
+  </div>
+  <a class="button button-secondary" data-graph-focus-link href="#">Open node</a>
+  <button type="button" class="button button-quiet" data-graph-focus-clear>Clear selection</button>
+</div>
+<p class="graph-help">Tip: click or focus a node to highlight its direct dependencies and dependents. The text lanes below remain the accessible full view.</p>
+<script type="application/json" id="graph-data">{"edges": [{"source": "partition", "target": "fibre-component"}, {"source": "closed-projection", "target": "partition"}, {"source": "compact-middle", "target": "partition"}, {"source": "middle-space", "target": "closed-projection"}, {"source": "factorization", "target": "partition"}, {"source": "factorization", "target": "compact-middle"}, {"source": "factorization", "target": "middle-space"}, {"source": "uniqueness", "target": "factorization"}], "name": "Monotone-light factorization", "nodes": [{"agent_status": "solved", "blueprint_status": "written", "color": "#10b981", "formal_status": "proved", "href": "nodes/fibre-component-eae31b14.html", "id": "fibre-component", "isabelle": {"fact": "Monotone_Light.fibre_component_def", "session": null, "theory": "Monotone_Light"}, "kind": "definition", "title": "Connected component within a point fibre"}, {"agent_status": "solved", "blueprint_status": "written", "color": "#10b981", "formal_status": "proved", "href": "nodes/partition-88faac11.html", "id": "partition", "isabelle": {"fact": "Monotone_Light.fibre_component_fibre", "session": null, "theory": "Monotone_Light"}, "kind": "lemma", "title": "Fibres of the component projection"}, {"agent_status": "solved", "blueprint_status": "written", "color": "#10b981", "formal_status": "proved", "href": "nodes/closed-projection-14e6d120.html", "id": "closed-projection", "isabelle": {"fact": "Monotone_Light.component_quotient_closed", "session": null, "theory": "Monotone_Light"}, "kind": "theorem", "title": "The component projection is closed"}, {"agent_status": "solved", "blueprint_status": "written", "color": "#10b981", "formal_status": "proved", "href": "nodes/compact-middle-89c39cb9.html", "id": "compact-middle", "isabelle": {"fact": "Monotone_Light.component_quotient_compact", "session": null, "theory": "Monotone_Light"}, "kind": "theorem", "title": "The middle space is compact"}, {"agent_status": "solved", "blueprint_status": "written", "color": "#10b981", "formal_status": "proved", "href": "nodes/middle-space-b390b9b2.html", "id": "middle-space", "isabelle": {"fact": "Monotone_Light.component_quotient_Hausdorff", "session": null, "theory": "Monotone_Light"}, "kind": "theorem", "title": "The middle space is Hausdorff"}, {"agent_status": "solved", "blueprint_status": "written", "color": "#10b981", "formal_status": "proved", "href": "nodes/factorization-98f6f754.html", "id": "factorization", "isabelle": {"fact": "Monotone_Light.monotone_light_factorization", "session": null, "theory": "Monotone_Light"}, "kind": "theorem", "title": "Monotone-light factorization"}, {"agent_status": "solved", "blueprint_status": "written", "color": "#10b981", "formal_status": "proved", "href": "nodes/uniqueness-7c8492a4.html", "id": "uniqueness", "isabelle": {"fact": "Monotone_Light.monotone_light_unique", "session": null, "theory": "Monotone_Light"}, "kind": "theorem", "title": "Uniqueness of the factorization up to homeomorphism"}]}</script>
+<figure class="graph-frame" data-graph-host tabindex="0" aria-labelledby="dependency-graph-caption">
+  <figcaption id="dependency-graph-caption" class="sr-only">
+    Dependency graph for Monotone-light factorization with 7 nodes.
+    Arrows point from each result to its dependencies. The dependency levels and links below
+    provide the same information without relying on the diagram.
+  </figcaption>
+    <div class="graph-fallback" data-graph-fallback>
+      <div class="callout warning graph-fallback-note">
+        <p><strong>Graphviz is not installed.</strong> Using the built-in dependency layout. Install <code>graphviz</code> when you need the canonical exported SVG.</p>
+      </div>
+      <svg class="graph-svg graph-fallback-svg" data-graph-fallback-svg role="img" aria-labelledby="dependency-graph-caption"></svg>
+    </div>
+</figure>
+<p class="graph-download">
+  <a href="graph.dot">graph.dot</a>
+  &middot; <a href="graph.json">graph.json</a>
+</p>
+
+<section class="critical-path-panel">
+  <h2>Critical path</h2>
+    <div class="callout success">
+      <p>Everything is proved or found &mdash; no critical path remains. 🎉</p>
+    </div>
+</section>
+
+<section>
+  <h2>Dependency levels</h2>
+  <p class="lede">
+    Nodes are grouped by longest dependency distance: level 0 nodes have no known dependencies, and higher levels can build on earlier lanes.
+  </p>
+  <div class="swimlanes">
+      <section class="swimlane " data-level="0">
+        <h3>Level 0 <span>1</span></h3>
+        <ul>
+            <li
+              data-filter-item
+              data-owner="__unassigned"
+            >
+              <a href="nodes/fibre-component-eae31b14.html"><code>fibre-component</code></a>
+              <span class="status-pill" style="background: #10b981;">proved</span>
+            </li>
+        </ul>
+      </section>
+      <section class="swimlane " data-level="1">
+        <h3>Level 1 <span>1</span></h3>
+        <ul>
+            <li
+              data-filter-item
+              data-owner="__unassigned"
+            >
+              <a href="nodes/partition-88faac11.html"><code>partition</code></a>
+              <span class="status-pill" style="background: #10b981;">proved</span>
+            </li>
+        </ul>
+      </section>
+      <section class="swimlane " data-level="2">
+        <h3>Level 2 <span>2</span></h3>
+        <ul>
+            <li
+              data-filter-item
+              data-owner="__unassigned"
+            >
+              <a href="nodes/closed-projection-14e6d120.html"><code>closed-projection</code></a>
+              <span class="status-pill" style="background: #10b981;">proved</span>
+            </li>
+            <li
+              data-filter-item
+              data-owner="__unassigned"
+            >
+              <a href="nodes/compact-middle-89c39cb9.html"><code>compact-middle</code></a>
+              <span class="status-pill" style="background: #10b981;">proved</span>
+            </li>
+        </ul>
+      </section>
+      <section class="swimlane " data-level="3">
+        <h3>Level 3 <span>1</span></h3>
+        <ul>
+            <li
+              data-filter-item
+              data-owner="__unassigned"
+            >
+              <a href="nodes/middle-space-b390b9b2.html"><code>middle-space</code></a>
+              <span class="status-pill" style="background: #10b981;">proved</span>
+            </li>
+        </ul>
+      </section>
+      <section class="swimlane " data-level="4">
+        <h3>Level 4 <span>1</span></h3>
+        <ul>
+            <li
+              data-filter-item
+              data-owner="__unassigned"
+            >
+              <a href="nodes/factorization-98f6f754.html"><code>factorization</code></a>
+              <span class="status-pill" style="background: #10b981;">proved</span>
+            </li>
+        </ul>
+      </section>
+      <section class="swimlane " data-level="5">
+        <h3>Level 5 <span>1</span></h3>
+        <ul>
+            <li
+              data-filter-item
+              data-owner="__unassigned"
+            >
+              <a href="nodes/uniqueness-7c8492a4.html"><code>uniqueness</code></a>
+              <span class="status-pill" style="background: #10b981;">proved</span>
+            </li>
+        </ul>
+      </section>
+  </div>
+</section>
+
+<details>
+  <summary>Raw DOT source</summary>
+  <p><a href="graph.dot">Download <code>graph.dot</code></a> &middot; <a href="graph.json">Download <code>graph.json</code></a></p>
+</details>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      Generated by <strong>IsabelleBlueprint</strong> · A fact existing is not the same as a trusted proof.
+    </div>
+  </footer>
+</body>
+</html>

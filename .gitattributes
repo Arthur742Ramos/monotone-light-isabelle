@@ -1,0 +1,5 @@
+* text=auto eol=lf
+artifacts/** -text -whitespace
+*.pdf binary
+*.tar.gz binary
+tools/*.patch -whitespace

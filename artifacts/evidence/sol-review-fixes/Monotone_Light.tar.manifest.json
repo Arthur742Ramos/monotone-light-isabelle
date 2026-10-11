@@ -1,0 +1,31 @@
+{
+  "archive_sha256": "0eabfd91f2318d8f5a3d97ccd325670ad920a108cdd277cbaf9faed2a6338458",
+  "source_bytes_match": true,
+  "files": [
+    {
+      "path": "Monotone_Light/ROOT",
+      "bytes": 200,
+      "sha256": "0c5fcad17779fa92be822f1125a79736416b8ea4380997eb962cd0aff77c0ada"
+    },
+    {
+      "path": "Monotone_Light/Monotone_Light.thy",
+      "bytes": 21175,
+      "sha256": "757358ceb316ff28843e1771a11e4a4130bc79a4e6eee5cd6c36ed676564db22"
+    },
+    {
+      "path": "Monotone_Light/LICENSE",
+      "bytes": 1369,
+      "sha256": "6a5c00151276c5a09d8ffc64998f73dca94692929110efd3b6d8a2f365be830a"
+    },
+    {
+      "path": "Monotone_Light/document/root.tex",
+      "bytes": 5289,
+      "sha256": "c3ffebda69fb55b91c03d53a5204a6e825657a2677f03d118c80bb7420876dea"
+    },
+    {
+      "path": "Monotone_Light/document/root.bib",
+      "bytes": 1149,
+      "sha256": "a7474c7e3c397094b13603fd99f4483b9da89169e6be08abd45a7e0ac840816e"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+--- a/src/token_markup.scala
++++ b/src/token_markup.scala
+@@ -1,5 +1,8 @@
+ /*  Title:      linter_base/src/token_markup.scala
+     Author:     Fabian Huch
++    Licence:    MIT; see ISABELLE-LINTER-LICENSE
++    Upstream:   isabelle-prover/isabelle-linter c9983adc5c51a6455f702bb58c9f960d425a2af3
++    Adaptation: transparent Isabelle2025-2 command_range wrappers
+ 
+ Maps markup trees into outer syntax tokens.
+ */
+@@ -137,6 +140,13 @@
+       case t: XML.Text => t
+     }
+ 
+-    reduce(start = 0, thy_xml.map(unwrap), res = Nil)
++    // Isabelle2025-2 wraps command spans in transparent command_range nodes.
++    // Preserve all source text and inner markup while exposing the spans.
++    def transparent_ranges(body: XML.Body): XML.Body = body.flatMap {
++      case XML.Elem(Markup("command_range", _), children) => transparent_ranges(children)
++      case XML.Elem(markup, children) => List(XML.Elem(markup, transparent_ranges(children)))
++      case t: XML.Text => List(t)
++    }
++    reduce(start = 0, transparent_ranges(thy_xml.map(unwrap)), res = Nil)
+   }
+ }

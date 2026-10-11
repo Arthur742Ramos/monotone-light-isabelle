@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Monotone-light factorization - Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8fafc" />
+  <meta name="generator" content="IsabelleBlueprint" />
+  <link rel="stylesheet" href="static/style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
+    integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    id="MathJax-script"
+  ></script>
+  <script defer src="static/filters.js"></script>
+  <script defer src="static/graph.js"></script>
+  <script defer src="static/trends.js"></script>
+  <script defer src="static/theme.js"></script>
+</head>
+<body data-offline="false">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Monotone-light factorization</a>
+      <nav aria-label="Primary navigation">
+        <div class="nav-links">
+          <a href="index.html" class="active" aria-current="page">Overview</a>
+          <a href="graph.html" class="" >Graph</a>
+          <a href="status.html" class="" >Status</a>
+          <a href="tasks.html" class="" >Tasks</a>
+          <a href="roadmap.html" class="" >Roadmap</a>
+          <a href="trends.html" class="" >Trends</a>
+        </div>
+      </nav>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span data-theme-label>Theme</span>
+      </button>
+    </div>
+  </header>
+  <main id="main-content" class="container">
+<section class="hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Proof cockpit</p>
+    <h1>Monotone-light factorization</h1>
+    <p class="lede hero-lede">
+      A live map of what is planned, what Isabelle can justify, and the safest
+      proof work to pick up next.
+    </p>
+    <div class="hero-actions" aria-label="Primary actions">
+      <a class="button button-primary" href="tasks.html">Open ready tasks</a>
+      <a class="button button-secondary" href="status.html">Review status</a>
+    </div>
+    <p class="context-line">
+        Last checked <time datetime="2026-10-11T20:40:22.984462+00:00">2026-10-11T20:40:22.984462+00:00</time>
+      <span aria-hidden="true">·</span>
+      1 source file
+    </p>
+  </div>
+
+  <aside class="health-panel" aria-labelledby="health-heading">
+    <div class="health-panel-heading">
+      <div>
+        <p class="eyebrow">Project health</p>
+        <h2 id="health-heading">100<span>%</span></h2>
+      </div>
+      <span class="health-status health-status-clear">
+        On track
+      </span>
+    </div>
+    <p class="health-caption">proved coverage across 7 formal targets</p>
+    <dl class="health-stats">
+      <div><dt>Proved</dt><dd>7</dd></div>
+      <div><dt>Found</dt><dd>0</dd></div>
+      <div><dt>Ready</dt><dd>0</dd></div>
+      <div><dt>Problems</dt><dd>0</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section aria-labelledby="trust-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Evidence at a glance</p>
+      <h2 id="trust-heading">Trust snapshot</h2>
+    </div>
+    <a class="section-link" href="status.html">View all statuses <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="status-bar" role="img" aria-label="Formal status distribution">
+      <span style="width: 100.0%; background: #10b981;" title="proved: 7" aria-label="proved: 7"></span>
+  </div>
+  <div class="status-grid">
+      <div class="status-card" data-status="proved" style="--status-color: #10b981;">
+        <div class="status-card-heading">
+          <span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>
+          <span class="status-card-label">proved</span>
+        </div>
+        <div class="status-card-count">7</div>
+        <div class="status-card-percent">100.0% of nodes</div>
+      </div>
+  </div>
+  <div class="status-legend" aria-label="Formal status meaning">
+    <span><strong>Proved</strong> trusted by the checker</span>
+    <span><strong>Found</strong> fact exists, trust still depends on context</span>
+    <span><strong>Stale</strong> dependencies changed since the check</span>
+    <span><strong>Problem</strong> broken, missing, failed, or tainted</span>
+  </div>
+</section>
+
+<section aria-labelledby="depth-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Structure</p>
+      <h2 id="depth-heading">Dependency depth</h2>
+    </div>
+    <a class="section-link" href="graph.html">Explore the graph <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="status-grid depth-grid">
+    <div class="status-card"><div class="status-card-count">6</div><div class="status-card-label">dependency levels</div><p class="card-note">Longest distance from a foundation.</p></div>
+    <div class="status-card"><div class="status-card-count">0</div><div class="status-card-label">cycle-blocked nodes</div><p class="card-note">Work that cannot be ordered yet.</p></div>
+    <div class="status-card"><div class="status-card-count">0</div><div class="status-card-label">missing deps</div><p class="card-note">References that need a blueprint node.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="next-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Make progress</p>
+      <h2 id="next-heading">Next action</h2>
+    </div>
+    <a class="section-link" href="roadmap.html">See the full roadmap <span aria-hidden="true">→</span></a>
+  </div>
+    <div class="callout">
+      <strong>No ready task is available right now.</strong>
+      <p>Every unfinished node is blocked, or the project is already fully formalised. Use the roadmap to see what is holding the next wave.</p>
+    </div>
+</section>
+
+
+<section aria-labelledby="nodes-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Browse the plan</p>
+      <h2 id="nodes-heading">Blueprint nodes</h2>
+    </div>
+    <a class="section-link" href="status.html">Search every node <span aria-hidden="true">→</span></a>
+  </div>
+    <ul class="node-list">
+        <li>
+          <div>
+            <a href="nodes/fibre-component-eae31b14.html"><code>fibre-component</code></a>
+            <span class="node-kind">definition</span>
+            <strong>Connected component within a point fibre</strong>
+          </div>
+          <span class="status-label"><span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>proved</span>
+        </li>
+        <li>
+          <div>
+            <a href="nodes/partition-88faac11.html"><code>partition</code></a>
+            <span class="node-kind">lemma</span>
+            <strong>Fibres of the component projection</strong>
+          </div>
+          <span class="status-label"><span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>proved</span>
+        </li>
+        <li>
+          <div>
+            <a href="nodes/closed-projection-14e6d120.html"><code>closed-projection</code></a>
+            <span class="node-kind">theorem</span>
+            <strong>The component projection is closed</strong>
+          </div>
+          <span class="status-label"><span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>proved</span>
+        </li>
+        <li>
+          <div>
+            <a href="nodes/compact-middle-89c39cb9.html"><code>compact-middle</code></a>
+            <span class="node-kind">theorem</span>
+            <strong>The middle space is compact</strong>
+          </div>
+          <span class="status-label"><span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>proved</span>
+        </li>
+        <li>
+          <div>
+            <a href="nodes/middle-space-b390b9b2.html"><code>middle-space</code></a>
+            <span class="node-kind">theorem</span>
+            <strong>The middle space is Hausdorff</strong>
+          </div>
+          <span class="status-label"><span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>proved</span>
+        </li>
+        <li>
+          <div>
+            <a href="nodes/factorization-98f6f754.html"><code>factorization</code></a>
+            <span class="node-kind">theorem</span>
+            <strong>Monotone-light factorization</strong>
+          </div>
+          <span class="status-label"><span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>proved</span>
+        </li>
+        <li>
+          <div>
+            <a href="nodes/uniqueness-7c8492a4.html"><code>uniqueness</code></a>
+            <span class="node-kind">theorem</span>
+            <strong>Uniqueness of the factorization up to homeomorphism</strong>
+          </div>
+          <span class="status-label"><span class="status-swatch" style="background: #10b981;" aria-hidden="true"></span>proved</span>
+        </li>
+    </ul>
+</section>
+
+<section class="trust-note" aria-labelledby="meaning-heading">
+  <h2 id="meaning-heading">Read the colors as evidence, not celebration</h2>
+  <p>
+    IsabelleBlueprint deliberately distinguishes <em>a fact with this name exists</em>
+    from <em>the proof is trusted</em>. Every status on this site is paired with
+    text so the project remains understandable in grayscale, on a screen reader,
+    and when Isabelle is unavailable.
+  </p>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      Generated by <strong>IsabelleBlueprint</strong> · A fact existing is not the same as a trusted proof.
+    </div>
+  </footer>
+</body>
+</html>

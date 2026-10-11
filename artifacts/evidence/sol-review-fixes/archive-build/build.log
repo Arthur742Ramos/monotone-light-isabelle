@@ -1,0 +1,35 @@
+COMMAND ["C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\isabelle-native-bridge.py", "build", "-v", "-o", "document=pdf", "-o", "document_build=owned_tectonic", "-o", "document_output=C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\archive-build\\document", "-d", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\afp-2026-10-06\\thys\\Topological_Groups", "-D", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\archive-extracted\\Monotone_Light"]
+Started at Sun Oct 11 17:38:27 GMT-3 2026 (polyml-5.9.2_x86_64_32-windows on CPC-arfre-036B6)
+ISABELLE_TOOL_JAVA_OPTIONS="-Djava.awt.headless=true -Xms128m -Xmx768m -Xss16m"
+ISABELLE_BUILD_OPTIONS=""
+
+ML_PLATFORM="x86_64_32-windows"
+ML_HOME="/cygdrive/c/Users/arfreita/Documents/Codex/2026-10-06/task-4/toolchain/Isabelle2025-2/contrib/polyml-5.9.2-2/x86_64_32-windows"
+ML_SYSTEM="polyml-5.9.2"
+ML_OPTIONS="--minheap 256 --maxheap 1792"
+
+Session Pure/Pure
+Session Misc/Tools
+Session HOL/HOL (main)
+Session HOL/HOL-Cardinals (timing)
+Session HOL/HOL-Library (main timing)
+Session HOL/HOL-Combinatorics (main timing)
+Session HOL/HOL-Computational_Algebra (main timing)
+Session HOL/HOL-Algebra (main timing)
+Session HOL/HOL-Decision_Procs (timing)
+Session HOL/HOL-Real_Asymp
+Session HOL/HOL-Analysis (main timing)
+Session AFP/Topological_Groups
+Session AFP/Monotone_Light
+Building Monotone_Light ...
+Monotone_Light: theory Monotone_Light.Monotone_Light
+Monotone_Light: theory Monotone_Light.Monotone_Light 100% (4.336s cumulated time)
+Preparing Monotone_Light/document ...
+Finished Monotone_Light/document (0:02:10 elapsed time)
+Document at "/cygdrive/c/Users/arfreita/Documents/Codex/2026-10-11/task/fix-validation/archive-build/document/document.pdf"
+Timing Monotone_Light (1 threads, 4.592s elapsed time, 4.078s cpu time, 0.172s GC time, factor 0.89)
+Finished Monotone_Light (0:00:33 elapsed time)
+
+Finished at Sun Oct 11 17:41:34 GMT-3 2026
+0:03:07 elapsed time
+EXIT_STATUS 0

@@ -1,0 +1,96 @@
+{
+  "logical_source_unchanged_except_two_document_commands": true,
+  "source_audit": {
+    "project": "",
+    "projectDir": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\archive-extracted\\Monotone_Light",
+    "session": "Monotone_Light",
+    "theoryCount": 1,
+    "loc": 471,
+    "theoremCount": 4,
+    "statementCount": 16,
+    "forbiddenTokens": [
+      "sorry",
+      "oops"
+    ],
+    "forbiddenHits": [],
+    "missingRequired": [],
+    "strayArtifacts": [],
+    "hasReadme": false,
+    "hasLicense": true,
+    "exitCode": 0
+  },
+  "full_pdf_sha256": "4541fdf62983c759465e13dc6bef83934fc9640e2f1e2d82952f0be29db5252f",
+  "archive_pdf_sha256": "4998967600c794a2662ba47f4d5fd737a67cd3d4146482b1c3024f46a175597f",
+  "pages": [
+    {
+      "page": "page-01.png",
+      "render_sha256": "7b0c840baa780f526d2d660f518e6247a78fceff8215763d28c72202aec318c5",
+      "archive_identical": true
+    },
+    {
+      "page": "page-02.png",
+      "render_sha256": "2c514a1eef38803b9ad46b7c5e78600ce0deaa48a4ad2640070f185862416102",
+      "archive_identical": true
+    },
+    {
+      "page": "page-03.png",
+      "render_sha256": "da91f8309035cb2b1b7887da89e857d9aebace5bdf8a9278fb7857a8148e455a",
+      "archive_identical": true
+    },
+    {
+      "page": "page-04.png",
+      "render_sha256": "8ff831cf2fb1b2bfd370f94c3e3324861adba772e922d1b5656d4ad123da7b2d",
+      "archive_identical": true
+    },
+    {
+      "page": "page-05.png",
+      "render_sha256": "dd46a97d90ce7a8e4475e1d31521b2aec9a39ecb5854e681d664b407e3187632",
+      "archive_identical": true
+    },
+    {
+      "page": "page-06.png",
+      "render_sha256": "67c06bf4b7002d3cbc99734391b5a8724fef0d29a8634ba1c27734ae2d6ea1bd",
+      "archive_identical": true
+    },
+    {
+      "page": "page-07.png",
+      "render_sha256": "44eaf6537deb68ec2e2a14f2ea0f2924fc116b00309290c856870570f2d4fe7b",
+      "archive_identical": true
+    },
+    {
+      "page": "page-08.png",
+      "render_sha256": "0963f86b74915dd233a8f68cd0a9a032c38a78241a06d83e0ad8c92312dd52f3",
+      "archive_identical": true
+    },
+    {
+      "page": "page-09.png",
+      "render_sha256": "ad1788170da165992d5d40ee095c6aa8c76e90ae472e7b633b20c35d6134a3ab",
+      "archive_identical": true
+    },
+    {
+      "page": "page-10.png",
+      "render_sha256": "00c7462152191b4d66708ad6cb609d9a5ece3ffc51d1ed26fae3c9e6b2921227",
+      "archive_identical": true
+    },
+    {
+      "page": "page-11.png",
+      "render_sha256": "8622222ab270f04678de39603c1bf7dc8befd836f15dd2638a31223da3ded793",
+      "archive_identical": true
+    },
+    {
+      "page": "page-12.png",
+      "render_sha256": "24295e2c6af51a11b055d6c275337544dc8ae97cf9c8dfca8e08fd6a3e91d194",
+      "archive_identical": true
+    },
+    {
+      "page": "page-13.png",
+      "render_sha256": "ed22ce9c8475df5b1eab2246cd5ad3923bb5c01bcff628d085d25819e36eb139",
+      "archive_identical": true
+    }
+  ],
+  "all_13_source_pages_visually_inspected": true,
+  "all_13_archive_pages_identical_to_inspected_pages": true,
+  "reviewed_closedness_statement_page": 5,
+  "reviewed_factorization_statement_page": 10,
+  "max_pages": 30
+}

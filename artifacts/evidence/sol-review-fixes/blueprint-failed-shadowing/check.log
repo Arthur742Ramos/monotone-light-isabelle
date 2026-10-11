@@ -1,0 +1,3 @@
+building session Monotone_Light with isabelle...
+isabelle build failed with exit code 1
+check report -> C:\Users\arfreita\Documents\Codex\2026-10-11\task\public-mirror\projects\monotone-light-isabelle\build\check_report.json

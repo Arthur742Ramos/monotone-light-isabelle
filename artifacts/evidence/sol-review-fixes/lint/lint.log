@@ -1,0 +1,4 @@
+COMMAND ["C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\isabelle-native-bridge.py", "lint", "-v", "-j1", "-o", "threads=1", "-o", "parallel_proofs=0", "-o", "quick_and_dirty=false", "-o", "skip_proofs=false", "-o", "document=false", "-o", "lint_bundles=afp_mandatory", "-f", "error", "-r", "json", "-O", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\lint\\lint.json", "-d", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\afp-2026-10-06\\thys\\Topological_Groups", "-D", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"]
+Linting Monotone_Light
+Processing Monotone_Light.Monotone_Light...
+EXIT_STATUS 0

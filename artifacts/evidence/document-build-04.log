@@ -1,0 +1,34 @@
+### Building Owned offline Tectonic document engine (C:\Users\arfreita\Documents\Codex\2026-10-11\task\components\owned-tectonic\lib\classes\owned_tectonic.jar) ...
+Started at Sun Oct 11 03:44:29 GMT-3 2026 (polyml-5.9.2_x86_64_32-windows on CPC-arfre-036B6)
+ISABELLE_TOOL_JAVA_OPTIONS="-Djava.awt.headless=true -Xms128m -Xmx768m -Xss16m"
+ISABELLE_BUILD_OPTIONS=""
+
+ML_PLATFORM="x86_64_32-windows"
+ML_HOME="/cygdrive/c/Users/arfreita/Documents/Codex/2026-10-06/task-4/toolchain/Isabelle2025-2/contrib/polyml-5.9.2-2/x86_64_32-windows"
+ML_SYSTEM="polyml-5.9.2"
+ML_OPTIONS="--minheap 256 --maxheap 1792"
+
+Session Pure/Pure
+Session Misc/Tools
+Session HOL/HOL (main)
+Session HOL/HOL-Cardinals (timing)
+Session HOL/HOL-Library (main timing)
+Session HOL/HOL-Combinatorics (main timing)
+Session HOL/HOL-Computational_Algebra (main timing)
+Session HOL/HOL-Algebra (main timing)
+Session HOL/HOL-Decision_Procs (timing)
+Session HOL/HOL-Real_Asymp
+Session HOL/HOL-Analysis (main timing)
+Session AFP/Topological_Groups
+Session AFP/Monotone_Light
+Building Monotone_Light ...
+Monotone_Light: theory Monotone_Light.Monotone_Light
+Monotone_Light: theory Monotone_Light.Monotone_Light 100% (8.026s cumulated time)
+Preparing Monotone_Light/document ...
+Finished Monotone_Light/document (0:03:43 elapsed time)
+Document at "/cygdrive/c/Users/arfreita/Documents/Codex/2026-10-11/task/deliverables/document/document.pdf"
+Timing Monotone_Light (1 threads, 8.844s elapsed time, 5.672s cpu time, 0.203s GC time, factor 0.64)
+Finished Monotone_Light (0:00:39 elapsed time)
+
+Finished at Sun Oct 11 03:49:19 GMT-3 2026
+0:04:50 elapsed time

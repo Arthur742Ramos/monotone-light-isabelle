@@ -1,0 +1,23 @@
+flowchart BT
+  n_fibre_45_component["fibre-component<br/>Connected component within a point fibre"]
+  n_partition["partition<br/>Fibres of the component projection"]
+  n_closed_45_projection["closed-projection<br/>The component projection is closed"]
+  n_compact_45_middle["compact-middle<br/>The middle space is compact"]
+  n_middle_45_space["middle-space<br/>The middle space is Hausdorff"]
+  n_factorization["factorization<br/>Monotone-light factorization"]
+  n_uniqueness["uniqueness<br/>Uniqueness of the factorization up to homeomorphism"]
+  n_partition --> n_fibre_45_component
+  n_closed_45_projection --> n_partition
+  n_compact_45_middle --> n_partition
+  n_middle_45_space --> n_closed_45_projection
+  n_factorization --> n_partition
+  n_factorization --> n_compact_45_middle
+  n_factorization --> n_middle_45_space
+  n_uniqueness --> n_factorization
+  style n_fibre_45_component fill:#10b981,stroke:#1f2937,color:#111827
+  style n_partition fill:#10b981,stroke:#1f2937,color:#111827
+  style n_closed_45_projection fill:#10b981,stroke:#1f2937,color:#111827
+  style n_compact_45_middle fill:#10b981,stroke:#1f2937,color:#111827
+  style n_middle_45_space fill:#10b981,stroke:#1f2937,color:#111827
+  style n_factorization fill:#10b981,stroke:#1f2937,color:#111827
+  style n_uniqueness fill:#10b981,stroke:#1f2937,color:#111827

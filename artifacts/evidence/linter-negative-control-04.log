@@ -1,0 +1,10 @@
+Linting Lint_Control
+Processing Lint_Control.Lint_Control...
+Linted Lint_Control.Lint_Control:
+
+  Error at 4:8:    [global_attribute_on_unnamed_lemma]
+  Do not use global attributes on unnamed lemmas.
+  
+  lemma [simp]: "True"
+         ^^^^
+

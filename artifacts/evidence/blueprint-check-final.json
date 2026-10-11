@@ -1,0 +1,104 @@
+{
+  "ran": true,
+  "invoked_command": [
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\isabelle.EXE",
+    "build",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\build",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\..\\..\\..\\afp-2026-10-06\\thys\\Topological_Groups",
+    "-j",
+    "1",
+    "Blueprint_Check_Wrapper"
+  ],
+  "isabelle_available": true,
+  "return_code": 0,
+  "duration_seconds": 79.76600000000326,
+  "stdout": "Building Blueprint_Check_Wrapper ...\nFinished Blueprint_Check_Wrapper (0:00:28 elapsed time)\n0:01:03 elapsed time\n",
+  "stderr": "",
+  "facts": [
+    {
+      "node_id": "fibre-component",
+      "fact": "Monotone_Light.fibre_component_def",
+      "theory": "Monotone_Light",
+      "exists": true,
+      "error": null,
+      "proof_status": "proved",
+      "oracles": []
+    },
+    {
+      "node_id": "partition",
+      "fact": "Monotone_Light.fibre_component_fibre",
+      "theory": "Monotone_Light",
+      "exists": true,
+      "error": null,
+      "proof_status": "proved",
+      "oracles": []
+    },
+    {
+      "node_id": "closed-projection",
+      "fact": "Monotone_Light.component_quotient_closed",
+      "theory": "Monotone_Light",
+      "exists": true,
+      "error": null,
+      "proof_status": "proved",
+      "oracles": []
+    },
+    {
+      "node_id": "compact-middle",
+      "fact": "Monotone_Light.component_quotient_compact",
+      "theory": "Monotone_Light",
+      "exists": true,
+      "error": null,
+      "proof_status": "proved",
+      "oracles": []
+    },
+    {
+      "node_id": "middle-space",
+      "fact": "Monotone_Light.component_quotient_Hausdorff",
+      "theory": "Monotone_Light",
+      "exists": true,
+      "error": null,
+      "proof_status": "proved",
+      "oracles": []
+    },
+    {
+      "node_id": "factorization",
+      "fact": "Monotone_Light.monotone_light_factorization",
+      "theory": "Monotone_Light",
+      "exists": true,
+      "error": null,
+      "proof_status": "proved",
+      "oracles": []
+    },
+    {
+      "node_id": "uniqueness",
+      "fact": "Monotone_Light.monotone_light_unique",
+      "theory": "Monotone_Light",
+      "exists": true,
+      "error": null,
+      "proof_status": "proved",
+      "oracles": []
+    }
+  ],
+  "error": null,
+  "generated_theory_path": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\build\\Blueprint_Check.thy",
+  "proof_checked": true,
+  "proof_status_path": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\build\\Blueprint_Proof_Status.tsv",
+  "timestamp": "2026-10-11T07:01:05.669061+00:00",
+  "source_fingerprint": "9957a08c58fcd337cdc32d25450fe9fb4d68d555a3492b0f1353131cfa7b5c54",
+  "node_fingerprints": {
+    "fibre-component": "c71633a9b97703c81970a6914b5d422239923207ce9205c1af4c4f43a9c4804c",
+    "partition": "207ecc21e85a2a4b73c6c47a27d33f3d2c57321c537cf2ba4ab8d6ebefb0d9f8",
+    "closed-projection": "e49865587145dba5a6705b73f451322da296d15e21a87a1bd12f5b94800254b7",
+    "compact-middle": "c14ba4c3d2838726b66647792c15de147521436b0ff7cf8b8dd4efd39a1d08f7",
+    "middle-space": "0fedcea534ac92745739a503476b4ef4027e8d32dc9b877805b7734b27b1611b",
+    "factorization": "8ec890042f47bf13a420b9a24beb19b2a125ed836aad208c14e6bc2376bf7e2b",
+    "uniqueness": "8b8ca3d56405b32aad772065775fd7f781d27eec2a064f7730a5498bd014980c"
+  },
+  "source_context_changed": false
+}

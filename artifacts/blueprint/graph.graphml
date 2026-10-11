@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="title" for="node" attr.name="title" attr.type="string"/>
+  <key id="kind" for="node" attr.name="kind" attr.type="string"/>
+  <key id="blueprint_status" for="node" attr.name="blueprint_status" attr.type="string"/>
+  <key id="formal_status" for="node" attr.name="formal_status" attr.type="string"/>
+  <key id="agent_status" for="node" attr.name="agent_status" attr.type="string"/>
+  <key id="color" for="node" attr.name="color" attr.type="string"/>
+  <graph id="Monotone-light factorization" edgedefault="directed">
+    <node id="fibre-component">
+      <data key="title">Connected component within a point fibre</data>
+      <data key="kind">definition</data>
+      <data key="blueprint_status">written</data>
+      <data key="formal_status">proved</data>
+      <data key="agent_status">solved</data>
+      <data key="color">#10b981</data>
+    </node>
+    <node id="partition">
+      <data key="title">Fibres of the component projection</data>
+      <data key="kind">lemma</data>
+      <data key="blueprint_status">written</data>
+      <data key="formal_status">proved</data>
+      <data key="agent_status">solved</data>
+      <data key="color">#10b981</data>
+    </node>
+    <node id="closed-projection">
+      <data key="title">The component projection is closed</data>
+      <data key="kind">theorem</data>
+      <data key="blueprint_status">written</data>
+      <data key="formal_status">proved</data>
+      <data key="agent_status">solved</data>
+      <data key="color">#10b981</data>
+    </node>
+    <node id="compact-middle">
+      <data key="title">The middle space is compact</data>
+      <data key="kind">theorem</data>
+      <data key="blueprint_status">written</data>
+      <data key="formal_status">proved</data>
+      <data key="agent_status">solved</data>
+      <data key="color">#10b981</data>
+    </node>
+    <node id="middle-space">
+      <data key="title">The middle space is Hausdorff</data>
+      <data key="kind">theorem</data>
+      <data key="blueprint_status">written</data>
+      <data key="formal_status">proved</data>
+      <data key="agent_status">solved</data>
+      <data key="color">#10b981</data>
+    </node>
+    <node id="factorization">
+      <data key="title">Monotone-light factorization</data>
+      <data key="kind">theorem</data>
+      <data key="blueprint_status">written</data>
+      <data key="formal_status">proved</data>
+      <data key="agent_status">solved</data>
+      <data key="color">#10b981</data>
+    </node>
+    <node id="uniqueness">
+      <data key="title">Uniqueness of the factorization up to homeomorphism</data>
+      <data key="kind">theorem</data>
+      <data key="blueprint_status">written</data>
+      <data key="formal_status">proved</data>
+      <data key="agent_status">solved</data>
+      <data key="color">#10b981</data>
+    </node>
+    <edge id="e0" source="partition" target="fibre-component"/>
+    <edge id="e1" source="closed-projection" target="partition"/>
+    <edge id="e2" source="compact-middle" target="partition"/>
+    <edge id="e3" source="middle-space" target="closed-projection"/>
+    <edge id="e4" source="factorization" target="partition"/>
+    <edge id="e5" source="factorization" target="compact-middle"/>
+    <edge id="e6" source="factorization" target="middle-space"/>
+    <edge id="e7" source="uniqueness" target="factorization"/>
+  </graph>
+</graphml>
