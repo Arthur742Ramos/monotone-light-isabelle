@@ -1,0 +1,137 @@
+{
+  "name": "Monotone-light factorization",
+  "nodes": [
+    {
+      "id": "fibre-component",
+      "title": "Connected component within a point fibre",
+      "kind": "definition",
+      "blueprint_status": "written",
+      "formal_status": "proved",
+      "agent_status": "solved",
+      "color": "#10b981",
+      "isabelle": {
+        "fact": "Monotone_Light.fibre_component_def",
+        "theory": "Monotone_Light",
+        "session": null
+      }
+    },
+    {
+      "id": "partition",
+      "title": "Fibres of the component projection",
+      "kind": "lemma",
+      "blueprint_status": "written",
+      "formal_status": "proved",
+      "agent_status": "solved",
+      "color": "#10b981",
+      "isabelle": {
+        "fact": "Monotone_Light.fibre_component_fibre",
+        "theory": "Monotone_Light",
+        "session": null
+      }
+    },
+    {
+      "id": "closed-projection",
+      "title": "The component projection is closed",
+      "kind": "theorem",
+      "blueprint_status": "written",
+      "formal_status": "proved",
+      "agent_status": "solved",
+      "color": "#10b981",
+      "isabelle": {
+        "fact": "Monotone_Light.component_quotient_closed",
+        "theory": "Monotone_Light",
+        "session": null
+      }
+    },
+    {
+      "id": "compact-middle",
+      "title": "The middle space is compact",
+      "kind": "theorem",
+      "blueprint_status": "written",
+      "formal_status": "proved",
+      "agent_status": "solved",
+      "color": "#10b981",
+      "isabelle": {
+        "fact": "Monotone_Light.component_quotient_compact",
+        "theory": "Monotone_Light",
+        "session": null
+      }
+    },
+    {
+      "id": "middle-space",
+      "title": "The middle space is Hausdorff",
+      "kind": "theorem",
+      "blueprint_status": "written",
+      "formal_status": "proved",
+      "agent_status": "solved",
+      "color": "#10b981",
+      "isabelle": {
+        "fact": "Monotone_Light.component_quotient_Hausdorff",
+        "theory": "Monotone_Light",
+        "session": null
+      }
+    },
+    {
+      "id": "factorization",
+      "title": "Monotone-light factorization",
+      "kind": "theorem",
+      "blueprint_status": "written",
+      "formal_status": "proved",
+      "agent_status": "solved",
+      "color": "#10b981",
+      "isabelle": {
+        "fact": "Monotone_Light.monotone_light_factorization",
+        "theory": "Monotone_Light",
+        "session": null
+      }
+    },
+    {
+      "id": "uniqueness",
+      "title": "Uniqueness of the factorization up to homeomorphism",
+      "kind": "theorem",
+      "blueprint_status": "written",
+      "formal_status": "proved",
+      "agent_status": "solved",
+      "color": "#10b981",
+      "isabelle": {
+        "fact": "Monotone_Light.monotone_light_unique",
+        "theory": "Monotone_Light",
+        "session": null
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "partition",
+      "target": "fibre-component"
+    },
+    {
+      "source": "closed-projection",
+      "target": "partition"
+    },
+    {
+      "source": "compact-middle",
+      "target": "partition"
+    },
+    {
+      "source": "middle-space",
+      "target": "closed-projection"
+    },
+    {
+      "source": "factorization",
+      "target": "partition"
+    },
+    {
+      "source": "factorization",
+      "target": "compact-middle"
+    },
+    {
+      "source": "factorization",
+      "target": "middle-space"
+    },
+    {
+      "source": "uniqueness",
+      "target": "factorization"
+    }
+  ]
+}

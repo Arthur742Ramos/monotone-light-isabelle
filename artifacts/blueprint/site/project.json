@@ -1,0 +1,211 @@
+{
+  "name": "Monotone-light factorization",
+  "source_files": [
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md"
+  ],
+  "nodes": [
+    {
+      "id": "fibre-component",
+      "kind": "definition",
+      "title": "Connected component within a point fibre",
+      "statement": "q(x) is the component of x in f inverse {f(x)}. Only points in the carrier\nmatter. Components are nonempty connected closed subsets of their fibres.",
+      "informal_proof": "",
+      "goal": null,
+      "uses": [],
+      "isabelle": {
+        "fact": "Monotone_Light.fibre_component_def",
+        "theory": "Monotone_Light",
+        "session": null
+      },
+      "status": {
+        "blueprint": "written",
+        "formal": "proved",
+        "agent": "solved",
+        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "check_error": null
+      },
+      "tags": [],
+      "effort": null,
+      "source": {
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "line": 13
+      }
+    },
+    {
+      "id": "partition",
+      "kind": "lemma",
+      "title": "Fibres of the component projection",
+      "statement": "For x in X, q inverse {q(x)} is exactly q(x).",
+      "informal_proof": "Component equivalence and equality\nof f values establish this. Hence q has connected fibres.",
+      "goal": null,
+      "uses": [
+        "fibre-component"
+      ],
+      "isabelle": {
+        "fact": "Monotone_Light.fibre_component_fibre",
+        "theory": "Monotone_Light",
+        "session": null
+      },
+      "status": {
+        "blueprint": "written",
+        "formal": "proved",
+        "agent": "solved",
+        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "check_error": null
+      },
+      "tags": [],
+      "effort": null,
+      "source": {
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "line": 22
+      }
+    },
+    {
+      "id": "closed-projection",
+      "kind": "theorem",
+      "title": "The component projection is closed",
+      "statement": "For compact Hausdorff X, Hausdorff Y and continuous f, q is closed.",
+      "informal_proof": "For a closed A and x outside its saturation, separate q(x) from A inside the\ncompact fibre using equality of components and quasicomponents. Extend the\nclopen partition of that fibre to disjoint open sets in X, one avoiding A.\nSince f is closed, a neighbourhood of f(x) has its whole preimage inside their\nunion. Connected fibre components cannot cross this union. This yields an open\nneighbourhood of x avoiding the saturation of A. Thus the saturation is closed,\nand the quotient criterion makes q(A) closed.",
+      "goal": null,
+      "uses": [
+        "partition"
+      ],
+      "isabelle": {
+        "fact": "Monotone_Light.component_quotient_closed",
+        "theory": "Monotone_Light",
+        "session": null
+      },
+      "status": {
+        "blueprint": "written",
+        "formal": "proved",
+        "agent": "solved",
+        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "check_error": null
+      },
+      "tags": [],
+      "effort": null,
+      "source": {
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "line": 36
+      }
+    },
+    {
+      "id": "compact-middle",
+      "kind": "theorem",
+      "title": "The middle space is compact",
+      "statement": "Under the target assumptions, the quotient by fibre components is compact.",
+      "informal_proof": "Compactness follows from continuity and surjectivity of q.",
+      "goal": null,
+      "uses": [
+        "partition"
+      ],
+      "isabelle": {
+        "fact": "Monotone_Light.component_quotient_compact",
+        "theory": "Monotone_Light",
+        "session": null
+      },
+      "status": {
+        "blueprint": "written",
+        "formal": "proved",
+        "agent": "solved",
+        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "check_error": null
+      },
+      "tags": [],
+      "effort": null,
+      "source": {
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "line": 55
+      }
+    },
+    {
+      "id": "middle-space",
+      "kind": "theorem",
+      "title": "The middle space is Hausdorff",
+      "statement": "Under the target assumptions, the quotient by fibre components is Hausdorff.",
+      "informal_proof": "The source is normal; a closed continuous quotient of a normal Hausdorff space\nis normal Hausdorff.",
+      "goal": null,
+      "uses": [
+        "closed-projection"
+      ],
+      "isabelle": {
+        "fact": "Monotone_Light.component_quotient_Hausdorff",
+        "theory": "Monotone_Light",
+        "session": null
+      },
+      "status": {
+        "blueprint": "written",
+        "formal": "proved",
+        "agent": "solved",
+        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "check_error": null
+      },
+      "tags": [],
+      "effort": null,
+      "source": {
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "line": 68
+      }
+    },
+    {
+      "id": "factorization",
+      "kind": "theorem",
+      "title": "Monotone-light factorization",
+      "statement": "Every continuous f from compact Hausdorff X to Hausdorff Y factors through\nthe component quotient as a surjective monotone quotient q and continuous light l.",
+      "informal_proof": "f is constant on q-fibres, so the quotient lifting theorem supplies a continuous\nl with f = l composed with q. If C is a connected subset of an l-fibre, its\npreimage under the closed monotone q is connected. That preimage lies in one\nf-fibre, hence in one component, and therefore C contains at most one point.\nThis proves lightness.",
+      "goal": null,
+      "uses": [
+        "partition",
+        "compact-middle",
+        "middle-space"
+      ],
+      "isabelle": {
+        "fact": "Monotone_Light.monotone_light_factorization",
+        "theory": "Monotone_Light",
+        "session": null
+      },
+      "status": {
+        "blueprint": "written",
+        "formal": "proved",
+        "agent": "solved",
+        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "check_error": null
+      },
+      "tags": [],
+      "effort": null,
+      "source": {
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "line": 82
+      }
+    },
+    {
+      "id": "uniqueness",
+      "kind": "theorem",
+      "title": "Uniqueness of the factorization up to homeomorphism",
+      "statement": "Any alternative continuous monotone-light factorization through a Hausdorff\nmiddle space, with surjective first map, admits a unique commuting homeomorphism\nfrom the component quotient. Uniqueness is on the carrier.",
+      "informal_proof": "In any such factorization with surjective monotone first map and\nlight second map, a fibre of the first map is contained in an f-component.\nConversely, the image of an f-component is connected inside a light fibre and\nthus a singleton. Hence the first map has exactly the same fibres as q. The\nquotient lifting theorem supplies a continuous bijection of middle spaces,\nwhich is a homeomorphism by compactness and the Hausdorff condition.",
+      "goal": null,
+      "uses": [
+        "factorization"
+      ],
+      "isabelle": {
+        "fact": "Monotone_Light.monotone_light_unique",
+        "theory": "Monotone_Light",
+        "session": null
+      },
+      "status": {
+        "blueprint": "written",
+        "formal": "proved",
+        "agent": "solved",
+        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "check_error": null
+      },
+      "tags": [],
+      "effort": 3,
+      "source": {
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "line": 100
+      }
+    }
+  ]
+}

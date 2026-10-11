@@ -1,0 +1,218 @@
+C:\Users\arfreita\Documents\Codex\2026-10-11\task\blueprint-env\Lib\site-packages\pydantic\main.py:1828: UserWarning: Field name "schema" in "MCPSchemaPayload" shadows an attribute in parent "BaseModel"
+  return meta(
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest
+{
+  "tools": [
+    "version",
+    "list_projects",
+    "evidence_snapshot",
+    "status",
+    "roadmap",
+    "list_tasks",
+    "next_task",
+    "agent_run_plan",
+    "agent_context",
+    "explain_node",
+    "lint",
+    "gate",
+    "blame",
+    "effort",
+    "diff",
+    "deps_audit",
+    "critical_path",
+    "impact",
+    "stats",
+    "staleness",
+    "history",
+    "burndown",
+    "portfolio",
+    "compat",
+    "suggest_facts",
+    "theory_index",
+    "graph",
+    "scorecard",
+    "tags",
+    "kinds",
+    "proof_debt",
+    "fact_coverage",
+    "levels",
+    "orphans",
+    "tag_cooccurrence",
+    "matrix",
+    "depends",
+    "path",
+    "schema",
+    "doctor",
+    "preview_rename_node",
+    "list_assignments"
+  ]
+}
+{
+  "status_schema": {
+    "properties": {
+      "top_tasks": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Top Tasks"
+      },
+      "kind": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Kind"
+      },
+      "priority": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Priority"
+      },
+      "difficulty": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Difficulty"
+      },
+      "memory_state": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Memory State"
+      },
+      "last_outcome": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Last Outcome"
+      },
+      "exclude_node": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Exclude Node"
+      },
+      "project": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Project"
+      }
+    },
+    "title": "statusArguments",
+    "type": "object"
+  }
+}
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"project\": \"Monotone-light factorization\",\n  \"health\": \"complete\",\n  \"metrics\": {\n    \"node_count\": 7,\n    \"formal_target_count\": 7,\n    \"proved_count\": 7,\n    \"found_count\": 0,\n    \"problem_count\": 0,\n    \"stale_count\": 0,\n    \"has_cycles\": false,\n    \"coverage_percent\": 100\n  },\n  \"ready_task_count\": 0,\n  \"next_task\": null,\n  \"snapshot\": {\n    \"project_root\": \"C:\\\\Users\\\\arfreita\\\\Documents\\\\Codex\\\\2026-10-11\\\\task\\\\monorepo\\\\projects\\\\monotone-light-isabelle\",\n    \"generated_at\": \"2026-10-11T07:21:00.336564Z\",\n    \"input_signature\": \"e04264f250883e8d21cdd02e2a13566aaf5a0e1b6727fd577685dee1b1774365\",\n    \"check_report\": \"C:\\\\Users\\\\arfreita\\\\Documents\\\\Codex\\\\2026-10-11\\\\task\\\\monorepo\\\\projects\\\\monotone-light-isabelle\\\\build\\\\check_report.json\",\n    \"check_report_exists\": true\n  },\n  \"top_ready_tasks\": [],\n  \"filters\": {\n    \"kind\": [],\n    \"priority\": [],\n    \"difficulty\": [],\n    \"memory_state\": [],\n    \"last_outcome\": [],\n    \"exclude_node\": []\n  },\n  \"filtered_ready_task_count\": 0,\n  \"message\": \"\"\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "project": "Monotone-light factorization",
+    "health": "complete",
+    "metrics": {
+      "node_count": 7,
+      "formal_target_count": 7,
+      "proved_count": 7,
+      "found_count": 0,
+      "problem_count": 0,
+      "stale_count": 0,
+      "has_cycles": false,
+      "coverage_percent": 100
+    },
+    "ready_task_count": 0,
+    "next_task": null,
+    "top_ready_tasks": [],
+    "filters": {
+      "kind": [],
+      "priority": [],
+      "difficulty": [],
+      "memory_state": [],
+      "last_outcome": [],
+      "exclude_node": []
+    },
+    "filtered_ready_task_count": 0,
+    "message": "",
+    "snapshot": {
+      "project_root": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle",
+      "generated_at": "2026-10-11T07:21:00.336564Z",
+      "input_signature": "e04264f250883e8d21cdd02e2a13566aaf5a0e1b6727fd577685dee1b1774365",
+      "check_report": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\build\\check_report.json",
+      "check_report_exists": true
+    }
+  },
+  "isError": false
+}

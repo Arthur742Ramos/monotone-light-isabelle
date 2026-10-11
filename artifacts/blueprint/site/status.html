@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Monotone-light factorization - Status</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8fafc" />
+  <meta name="generator" content="IsabelleBlueprint" />
+  <link rel="stylesheet" href="static/style.css" />
+  <meta name="isabelle-blueprint-offline" content="true" />
+  <script defer src="static/filters.js"></script>
+  <script defer src="static/graph.js"></script>
+  <script defer src="static/trends.js"></script>
+  <script defer src="static/theme.js"></script>
+</head>
+<body data-offline="true">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Monotone-light factorization</a>
+      <nav aria-label="Primary navigation">
+        <div class="nav-links">
+          <a href="index.html" class="" >Overview</a>
+          <a href="graph.html" class="" >Graph</a>
+          <a href="status.html" class="active" aria-current="page">Status</a>
+          <a href="tasks.html" class="" >Tasks</a>
+          <a href="roadmap.html" class="" >Roadmap</a>
+          <a href="trends.html" class="" >Trends</a>
+        </div>
+      </nav>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span data-theme-label>Theme</span>
+      </button>
+    </div>
+  </header>
+  <main id="main-content" class="container">
+<h1>Status table</h1>
+
+<section class="status-summary">
+  <article>
+    <h2>Blueprint</h2>
+      <div class="summary-row">
+        <span>stub</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>written</span>
+        <meter min="0" max="100" value="100.0">100.0%</meter>
+        <strong>7</strong>
+      </div>
+      <div class="summary-row">
+        <span>reviewed</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+  </article>
+  <article>
+    <h2>Formal</h2>
+      <div class="summary-row">
+        <span>missing</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>named</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>not_found</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>found</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>proved</span>
+        <meter min="0" max="100" value="100.0">100.0%</meter>
+        <strong>7</strong>
+      </div>
+      <div class="summary-row">
+        <span>tainted</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>stale</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>broken</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>failed_check</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+  </article>
+  <article>
+    <h2>Agent</h2>
+      <div class="summary-row">
+        <span>blocked</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>ready</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>in_progress</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>attempted</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+      <div class="summary-row">
+        <span>solved</span>
+        <meter min="0" max="100" value="100.0">100.0%</meter>
+        <strong>7</strong>
+      </div>
+      <div class="summary-row">
+        <span>needs_human</span>
+        <meter min="0" max="100" value="0.0">0.0%</meter>
+        <strong>0</strong>
+      </div>
+  </article>
+</section>
+
+<section class="filters" aria-label="Filter status table">
+  <label class="search-box">
+    <span class="filter-label">Search</span>
+    <input type="search" data-filter-search placeholder="Search id, title, fact, tags..." />
+  </label>
+  <div class="filter-row">
+    <span class="filter-label">Blueprint</span>
+      <button type="button" class="filter-pill" data-filter-dim="blueprint" data-filter-value="written">written <small>(7)</small></button>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">Formal</span>
+      <button type="button" class="filter-pill" data-filter-dim="formal" data-filter-value="proved" style="--pill-accent: #10b981;">proved <small>(7)</small></button>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">Agent</span>
+      <button type="button" class="filter-pill" data-filter-dim="agent" data-filter-value="solved">solved <small>(7)</small></button>
+  </div>
+  <div class="filter-row filter-row-actions">
+    <button type="button" class="filter-clear" data-filter-clear>Clear filters</button>
+    <span class="filter-count"><span data-filter-count>7 / 7</span> nodes shown</span>
+  </div>
+</section>
+
+<table class="status-table">
+  <caption class="sr-only">Blueprint nodes and their blueprint, formal, and agent statuses.</caption>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Kind</th>
+      <th scope="col">Title</th>
+      <th scope="col">Isabelle fact</th>
+      <th scope="col">Blueprint</th>
+      <th scope="col">Formal</th>
+      <th scope="col">Agent</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr data-blueprint="written" data-formal="proved" data-agent="solved" data-search="fibre-component connected component within a point fibre definition monotone_light.fibre_component_def ">
+        <th scope="row"><a href="nodes/fibre-component-eae31b14.html"><code>fibre-component</code></a></th>
+        <td>definition</td>
+        <td>Connected component within a point fibre</td>
+        <td><code>Monotone_Light.fibre_component_def</code></td>
+        <td>written</td>
+        <td><span class="status-pill" style="background: #10b981;">proved</span></td>
+        <td>solved</td>
+      </tr>
+      <tr data-blueprint="written" data-formal="proved" data-agent="solved" data-search="partition fibres of the component projection lemma monotone_light.fibre_component_fibre ">
+        <th scope="row"><a href="nodes/partition-88faac11.html"><code>partition</code></a></th>
+        <td>lemma</td>
+        <td>Fibres of the component projection</td>
+        <td><code>Monotone_Light.fibre_component_fibre</code></td>
+        <td>written</td>
+        <td><span class="status-pill" style="background: #10b981;">proved</span></td>
+        <td>solved</td>
+      </tr>
+      <tr data-blueprint="written" data-formal="proved" data-agent="solved" data-search="closed-projection the component projection is closed theorem monotone_light.component_quotient_closed ">
+        <th scope="row"><a href="nodes/closed-projection-14e6d120.html"><code>closed-projection</code></a></th>
+        <td>theorem</td>
+        <td>The component projection is closed</td>
+        <td><code>Monotone_Light.component_quotient_closed</code></td>
+        <td>written</td>
+        <td><span class="status-pill" style="background: #10b981;">proved</span></td>
+        <td>solved</td>
+      </tr>
+      <tr data-blueprint="written" data-formal="proved" data-agent="solved" data-search="compact-middle the middle space is compact theorem monotone_light.component_quotient_compact ">
+        <th scope="row"><a href="nodes/compact-middle-89c39cb9.html"><code>compact-middle</code></a></th>
+        <td>theorem</td>
+        <td>The middle space is compact</td>
+        <td><code>Monotone_Light.component_quotient_compact</code></td>
+        <td>written</td>
+        <td><span class="status-pill" style="background: #10b981;">proved</span></td>
+        <td>solved</td>
+      </tr>
+      <tr data-blueprint="written" data-formal="proved" data-agent="solved" data-search="middle-space the middle space is hausdorff theorem monotone_light.component_quotient_hausdorff ">
+        <th scope="row"><a href="nodes/middle-space-b390b9b2.html"><code>middle-space</code></a></th>
+        <td>theorem</td>
+        <td>The middle space is Hausdorff</td>
+        <td><code>Monotone_Light.component_quotient_Hausdorff</code></td>
+        <td>written</td>
+        <td><span class="status-pill" style="background: #10b981;">proved</span></td>
+        <td>solved</td>
+      </tr>
+      <tr data-blueprint="written" data-formal="proved" data-agent="solved" data-search="factorization monotone-light factorization theorem monotone_light.monotone_light_factorization ">
+        <th scope="row"><a href="nodes/factorization-98f6f754.html"><code>factorization</code></a></th>
+        <td>theorem</td>
+        <td>Monotone-light factorization</td>
+        <td><code>Monotone_Light.monotone_light_factorization</code></td>
+        <td>written</td>
+        <td><span class="status-pill" style="background: #10b981;">proved</span></td>
+        <td>solved</td>
+      </tr>
+      <tr data-blueprint="written" data-formal="proved" data-agent="solved" data-search="uniqueness uniqueness of the factorization up to homeomorphism theorem monotone_light.monotone_light_unique ">
+        <th scope="row"><a href="nodes/uniqueness-7c8492a4.html"><code>uniqueness</code></a></th>
+        <td>theorem</td>
+        <td>Uniqueness of the factorization up to homeomorphism</td>
+        <td><code>Monotone_Light.monotone_light_unique</code></td>
+        <td>written</td>
+        <td><span class="status-pill" style="background: #10b981;">proved</span></td>
+        <td>solved</td>
+      </tr>
+  </tbody>
+</table>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      Generated by <strong>IsabelleBlueprint</strong> · A fact existing is not the same as a trusted proof.
+    </div>
+  </footer>
+</body>
+</html>

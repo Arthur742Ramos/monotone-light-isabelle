@@ -1,0 +1,5 @@
+Bounded Mirabelle/Sledgehammer cleanup on final existence assembly (lines 344–347) and a separate uniqueness closing-command pass (lines 466–467), Isabelle2025-2/cvc5, requested timeout=5 seconds, maximum 40 calls per run.
+
+Actual existence pass: two Sledgehammer calls, both timed out, no proof candidates. Actual uniqueness pass: two Sledgehammer calls, both timed out, no proof candidates. All four existing goal proofs were retained in readable structured Isar. Native proof/session runs finished successfully. These are search outcomes, not failures of the checked proofs.
+
+The first invocation supplied two ranges for the same theory but produced calls only for the first range. The separate uniqueness invocation demonstrably covered both using/by commands on line 466. Raw generated mirabelle directories were inspected and removed; no raw mirabelle.log is committed.

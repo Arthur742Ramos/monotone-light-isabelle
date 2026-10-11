@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Monotone-light factorization - Trends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8fafc" />
+  <meta name="generator" content="IsabelleBlueprint" />
+  <link rel="stylesheet" href="static/style.css" />
+  <meta name="isabelle-blueprint-offline" content="true" />
+  <script defer src="static/filters.js"></script>
+  <script defer src="static/graph.js"></script>
+  <script defer src="static/trends.js"></script>
+  <script defer src="static/theme.js"></script>
+</head>
+<body data-offline="true">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Monotone-light factorization</a>
+      <nav aria-label="Primary navigation">
+        <div class="nav-links">
+          <a href="index.html" class="" >Overview</a>
+          <a href="graph.html" class="" >Graph</a>
+          <a href="status.html" class="" >Status</a>
+          <a href="tasks.html" class="" >Tasks</a>
+          <a href="roadmap.html" class="" >Roadmap</a>
+          <a href="trends.html" class="active" aria-current="page">Trends</a>
+        </div>
+      </nav>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span data-theme-label>Theme</span>
+      </button>
+    </div>
+  </header>
+  <main id="main-content" class="container">
+<h1>Trends</h1>
+
+<p class="lede">
+  Coverage and problem counts across recent runs of <code>isabelle-blueprint report</code>.
+  History is appended to <code>build/trends.json</code> (and shipped as
+  <code>trends.json</code> alongside the site and capped to the most recent
+  500 entries. The chart also embeds its data so the static site remains useful
+  when opened directly from disk.
+</p>
+
+  <script type="application/json" id="trend-data">{"entries": [{"branch": null, "commit_sha": null, "coverage_percent": null, "formal_target_count": 0, "found_count": 0, "has_cycles": false, "node_count": 6, "problem_count": 0, "proved_count": 0, "stale_count": 0, "timestamp": "2026-10-11T04:46:04Z"}, {"branch": null, "commit_sha": null, "coverage_percent": 0, "formal_target_count": 6, "found_count": 0, "has_cycles": false, "node_count": 6, "problem_count": 0, "proved_count": 0, "stale_count": 0, "timestamp": "2026-10-11T04:58:23Z"}, {"branch": null, "commit_sha": null, "coverage_percent": 0, "formal_target_count": 6, "found_count": 0, "has_cycles": false, "node_count": 6, "problem_count": 0, "proved_count": 0, "stale_count": 0, "timestamp": "2026-10-11T05:29:05Z"}, {"branch": null, "commit_sha": null, "coverage_percent": 100, "formal_target_count": 7, "found_count": 0, "has_cycles": false, "node_count": 7, "problem_count": 0, "proved_count": 7, "stale_count": 0, "timestamp": "2026-10-11T07:15:17Z"}]}</script>
+  <section class="trend-summary" aria-label="Latest trend snapshot">
+    <div><span>Latest coverage</span><strong>100%</strong></div>
+    <div><span>Latest problems</span><strong>0</strong></div>
+    <div><span>Recorded runs</span><strong>4</strong></div>
+<div><span>Coverage change</span><strong class="delta-positive">+100 pp</strong></div>  </section>
+  <section class="trend-chart" data-trend-chart>
+    <div class="section-heading">
+      <div><p class="eyebrow">Project momentum</p><h2>Coverage and problems over time</h2></div>
+      <span class="chart-note">Hover points for exact values</span>
+    </div>
+    <div class="trend-chart-host" data-trend-chart-host>
+      <p class="trend-chart-empty">Loading chart&hellip;</p>
+    </div>
+    <div class="trend-chart-legend" data-trend-chart-legend></div>
+  </section>
+
+  <section class="trend-table-wrap">
+    <h2>History</h2>
+    <table class="trend-table">
+      <caption class="sr-only">Blueprint coverage and problem history by recorded run.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Recorded</th>
+          <th scope="col">Commit</th>
+          <th scope="col">Branch</th>
+          <th scope="col">Coverage</th>
+          <th scope="col">Proved</th>
+          <th scope="col">Problems</th>
+          <th scope="col">Nodes</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <th scope="row">2026-10-11T07:15:17Z</th>
+            <td><code>local</code></td>
+            <td>-</td>
+            <td>100%</td>
+            <td>7</td>
+            <td>0</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th scope="row">2026-10-11T05:29:05Z</th>
+            <td><code>local</code></td>
+            <td>-</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row">2026-10-11T04:58:23Z</th>
+            <td><code>local</code></td>
+            <td>-</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row">2026-10-11T04:46:04Z</th>
+            <td><code>local</code></td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td>6</td>
+          </tr>
+      </tbody>
+    </table>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      Generated by <strong>IsabelleBlueprint</strong> · A fact existing is not the same as a trusted proof.
+    </div>
+  </footer>
+</body>
+</html>

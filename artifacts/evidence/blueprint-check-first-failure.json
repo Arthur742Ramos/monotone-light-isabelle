@@ -1,0 +1,87 @@
+{
+  "ran": true,
+  "invoked_command": [
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\isabelle-native.exe",
+    "build",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\build",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\..\\..\\..\\afp-2026-10-06\\thys\\Topological_Groups",
+    "-j",
+    "1",
+    "Blueprint_Check_Wrapper"
+  ],
+  "isabelle_available": true,
+  "return_code": 1,
+  "duration_seconds": 80.31300000002375,
+  "stdout": "Building Blueprint_Check_Wrapper ...\nBlueprint_Check_Wrapper FAILED (see also \"isabelle build_log -H Error Blueprint_Check_Wrapper\")\n*** Expected singleton fact \"Monotone_Light.component_quotient_compact_Hausdorff\" (length 2) (line 15 of \"/cygdrive/c/Users/arfreita/Documents/Codex/2026-10-11/task/monorepo/projects/monotone-light-isabelle/build/Blueprint_Check.thy\")\n*** At command \"ML\" (line 11 of \"/cygdrive/c/Users/arfreita/Documents/Codex/2026-10-11/task/monorepo/projects/monotone-light-isabelle/build/Blueprint_Check.thy\")\nUnfinished session(s): Blueprint_Check_Wrapper\n0:00:46 elapsed time\n",
+  "stderr": "",
+  "facts": [
+    {
+      "node_id": "fibre-component",
+      "fact": "Monotone_Light.fibre_component_def",
+      "theory": "Monotone_Light",
+      "exists": false,
+      "error": "source context changed or became unverifiable during check; rerun check",
+      "proof_status": null,
+      "oracles": []
+    },
+    {
+      "node_id": "partition",
+      "fact": "Monotone_Light.fibre_component_fibre",
+      "theory": "Monotone_Light",
+      "exists": false,
+      "error": "source context changed or became unverifiable during check; rerun check",
+      "proof_status": null,
+      "oracles": []
+    },
+    {
+      "node_id": "closed-projection",
+      "fact": "Monotone_Light.component_quotient_closed",
+      "theory": "Monotone_Light",
+      "exists": false,
+      "error": "source context changed or became unverifiable during check; rerun check",
+      "proof_status": null,
+      "oracles": []
+    },
+    {
+      "node_id": "middle-space",
+      "fact": "Monotone_Light.component_quotient_compact_Hausdorff",
+      "theory": "Monotone_Light",
+      "exists": false,
+      "error": "source context changed or became unverifiable during check; rerun check",
+      "proof_status": null,
+      "oracles": []
+    },
+    {
+      "node_id": "factorization",
+      "fact": "Monotone_Light.monotone_light_factorization",
+      "theory": "Monotone_Light",
+      "exists": false,
+      "error": "source context changed or became unverifiable during check; rerun check",
+      "proof_status": null,
+      "oracles": []
+    },
+    {
+      "node_id": "uniqueness",
+      "fact": "Monotone_Light.monotone_light_unique",
+      "theory": "Monotone_Light",
+      "exists": false,
+      "error": "source context changed or became unverifiable during check; rerun check",
+      "proof_status": null,
+      "oracles": []
+    }
+  ],
+  "error": "source context changed or became unverifiable during check; rerun check",
+  "generated_theory_path": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\build\\Blueprint_Check.thy",
+  "proof_checked": false,
+  "proof_status_path": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\build\\Blueprint_Proof_Status.tsv",
+  "timestamp": "2026-10-11T06:10:51.160282+00:00",
+  "source_fingerprint": null,
+  "node_fingerprints": {},
+  "source_context_changed": true
+}

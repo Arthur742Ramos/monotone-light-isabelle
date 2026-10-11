@@ -1,0 +1,20 @@
+digraph blueprint {
+  graph [rankdir=BT, splines=true, bgcolor="white", fontname="Helvetica"];
+  node  [shape=box, style="filled,rounded", fontname="Helvetica", fontsize=11];
+  edge  [color="#94a3b8"];
+  "fibre-component" [label="fibre-component\nConnected component within a point fibre", tooltip="definition | blueprint=written formal=proved agent=solved", fillcolor="#10b981", color="#1f2937"];
+  "partition" [label="partition\nFibres of the component projection", tooltip="lemma | blueprint=written formal=proved agent=solved", fillcolor="#10b981", color="#1f2937"];
+  "closed-projection" [label="closed-projection\nThe component projection is closed", tooltip="theorem | blueprint=written formal=proved agent=solved", fillcolor="#10b981", color="#1f2937"];
+  "compact-middle" [label="compact-middle\nThe middle space is compact", tooltip="theorem | blueprint=written formal=proved agent=solved", fillcolor="#10b981", color="#1f2937"];
+  "middle-space" [label="middle-space\nThe middle space is Hausdorff", tooltip="theorem | blueprint=written formal=proved agent=solved", fillcolor="#10b981", color="#1f2937"];
+  "factorization" [label="factorization\nMonotone-light factorization", tooltip="theorem | blueprint=written formal=proved agent=solved", fillcolor="#10b981", color="#1f2937"];
+  "uniqueness" [label="uniqueness\nUniqueness of the factorization up to homeomorphism", tooltip="theorem | blueprint=written formal=proved agent=solved", fillcolor="#10b981", color="#1f2937"];
+  "partition" -> "fibre-component";
+  "closed-projection" -> "partition";
+  "compact-middle" -> "partition";
+  "middle-space" -> "closed-projection";
+  "factorization" -> "partition";
+  "factorization" -> "compact-middle";
+  "factorization" -> "middle-space";
+  "uniqueness" -> "factorization";
+}

@@ -1,0 +1,3 @@
+session Lint_Control = HOL +
+  options [document = false, export_theory = true]
+  theories Lint_Control

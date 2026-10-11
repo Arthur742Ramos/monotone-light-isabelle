@@ -1,0 +1,11 @@
+{
+  "archiveSha256": "95108681571E43FA40FCDAB670091B48E2991871E7952554A2DC3C842FBFA2B1",
+  "exactArchiveBuildExitCode": 0,
+  "isolatedUserHome": true,
+  "sourceBytesMatch": true,
+  "pages": 13,
+  "packagePdfSha256": "C87FB77C7FFAE4601377A14A1D0A35A6118608750176D97CA5906042C811E140",
+  "documentBuildLog": "package-build.log",
+  "pdfInfo": "package-pdf-info.txt",
+  "note": "Package PDF page count verified; visual inspection applies to the original complete PDF. An optional extracted-text comparison was not run because pdftotext was unavailable."
+}

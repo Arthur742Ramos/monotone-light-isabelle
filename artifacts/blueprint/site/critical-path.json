@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "project": "Monotone-light factorization",
+  "remaining_count": 0,
+  "goal_count": 0,
+  "longest": null,
+  "goals": [],
+  "bottlenecks": [],
+  "cycles": [],
+  "missing_dependencies": [],
+  "inconsistent": []
+}

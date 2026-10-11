@@ -1,0 +1,8 @@
+build/
+site/
+.isabelle-blueprint/
+output/
+heaps/
+mirabelle*/
+*.tar.gz
+__pycache__/

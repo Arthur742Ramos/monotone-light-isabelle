@@ -1,0 +1,9 @@
+chapter AFP
+
+session Monotone_Light = Topological_Groups +
+  options [timeout = 600, document = pdf, export_theory = true]
+  theories
+    Monotone_Light
+  document_files
+    "root.tex"
+    "root.bib"

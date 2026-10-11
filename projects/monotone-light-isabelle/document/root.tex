@@ -1,0 +1,95 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsmath,amssymb}
+\usepackage{pdfsetup}
+\urlstyle{rm}
+\isabellestyle{it}
+\begin{document}
+\title{Monotone--Light Factorization of Compact Hausdorff Maps}
+\author{Arthur Freitas Ramos \\ David Barros Hulak \\
+Ruy Jose Guerra Barretto de Queiroz}
+\maketitle
+\begin{abstract}
+Every continuous map from a compact Hausdorff space to a Hausdorff space
+factors through a compact Hausdorff space as a surjective monotone map
+followed by a light map. The middle space is the quotient by connected
+components of point fibres. We prove the factorization and its uniqueness
+up to a homeomorphism commuting with the factor maps.
+\end{abstract}
+\tableofcontents
+\section{Introduction}
+For a continuous map $f:X\to Y$, a monotone map has connected point fibres,
+and a light map has totally disconnected point fibres. These notions isolate
+two different behaviours: the collapse of connected subsets, and maps whose
+fibres have no nontrivial connected subset. The classical monotone--light
+factorization separates these behaviours. Eilenberg's original result treats
+compact metric spaces~\cite{Eilenberg1934}; the compact Hausdorff formulation
+and its categorical interpretation are discussed by
+Carboni, Janelidze, Kelly and Par\'e~\cite{Carboni1997}, Sections 7.3--7.5.
+Michael~\cite{Michael1964}, Section 2, pages 5--6, gives a direct account
+of fibre components, lightness and Hausdorff separation.
+
+Our statement assumes that $X$ is compact Hausdorff and $Y$ is Hausdorff.
+The map $f$ need not be surjective, and $Y$ need not be compact. The empty
+space is allowed. The result constructs a middle space $M$, a continuous
+surjective quotient $q:X\to M$, and a continuous map $l:M\to Y$, such that
+$f=l\circ q$ on the carrier of $X$. The fibres of $q$ are precisely the
+connected components of the fibres of $f$. Consequently $q$ is monotone
+and $l$ is light.
+
+This is a formalization of a classical theorem, with no claim of new
+mathematical content. A targeted search of HOL-Analysis and relevant AFP
+topology entries found no existing formalization of this factorization.
+The general quotient topology is imported from the AFP entry
+\emph{Topological Groups}~\cite{TopologicalGroups}; the development uses
+HOL-Analysis's existing connected components, quasicomponents, monotone
+maps, separation theorems and quotient lifting theorem.
+
+Codex assisted with literature searches, proof planning, Isabelle proof
+engineering, documentation and validation. An independent AI mathematical
+review checked the argument and the generality of its statements. This
+disclosure does not assign individual duties to the established human
+author team or claim human review or endorsement.
+
+\section{Proof and formal representation}
+The carrier of the middle space is the set of fibre components. The
+projection sends $x$ to the component of $x$ in $f^{-1}\{f(x)\}$, with the
+quotient topology. Equal projection values characterize membership in the
+same fibre component. Isabelle represents spaces as topology values with
+an explicit carrier, so factor identities and uniqueness are asserted on
+carriers; total functions may have irrelevant values outside them.
+
+The central point is that $q$ is closed. Given a closed $A\subseteq X$ and
+a point $x$ whose fibre component avoids $A$, work inside the compact
+Hausdorff fibre $F=f^{-1}\{f(x)\}$. Components and quasicomponents coincide
+there. A clopen subset $P$ of $F$ contains the component of $x$ and avoids
+$A\cap F$. Normality of $X$ gives disjoint open neighbourhoods $U,V$ of
+$P$ and $A\cup(F\setminus P)$ respectively. Since $f$ is closed, an open
+neighbourhood $N$ of $f(x)$ has $f^{-1}N\subseteq U\cup V$. A connected
+fibre component through $U\cap f^{-1}N$ cannot meet $V$, so this open set
+is saturated and avoids $A$. The saturation of every closed $A$ is
+therefore closed. The quotient criterion proves that $q$ is closed.
+
+Compactness of $M$ follows from the continuous surjection $q$.
+A closed continuous image of a normal Hausdorff space is Hausdorff.
+The quotient lifting theorem now induces $l$. For a connected subset $C$
+of an $l$-fibre, the closed monotone map $q$ has connected preimage
+$q^{-1}C$. That preimage is contained in an $f$-fibre and hence in one
+component. Surjectivity of $q$ forces $C$ to have at most one point,
+which proves lightness.
+
+For any alternative continuous monotone--light factorization through a
+Hausdorff middle space, with a surjective first map, its first-map fibres equal the fibre components
+of $f$: monotonicity gives one inclusion, and lightness of the image
+of a connected component gives the other. Quotient lifting produces
+the comparison map. It is a continuous bijection from compact $M$
+to a Hausdorff space, hence a homeomorphism. Surjectivity of $q$
+makes that comparison unique on the carrier.
+
+\section{Formal development}
+All new definitions, statements and complete proofs are printed below.
+\input{session}
+\bibliographystyle{abbrv}
+\bibliography{root}
+\end{document}

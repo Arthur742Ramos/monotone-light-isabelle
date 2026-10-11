@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "files": [
+    "badge.json",
+    "badge.svg",
+    "critical-path.json",
+    "graph.dot",
+    "graph.html",
+    "graph.json",
+    "index.html",
+    "nodes/closed-projection-14e6d120.html",
+    "nodes/compact-middle-89c39cb9.html",
+    "nodes/factorization-98f6f754.html",
+    "nodes/fibre-component-eae31b14.html",
+    "nodes/middle-space-b390b9b2.html",
+    "nodes/partition-88faac11.html",
+    "nodes/uniqueness-7c8492a4.html",
+    "project.json",
+    "roadmap.html",
+    "roadmap.json",
+    "static/filters.js",
+    "static/graph.js",
+    "static/style.css",
+    "static/theme.js",
+    "static/trends.js",
+    "status.html",
+    "tasks.html",
+    "tasks.json",
+    "trends.html",
+    "trends.json"
+  ]
+}

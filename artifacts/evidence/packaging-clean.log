@@ -1,0 +1,12 @@
+AFP audit: C:\Users\arfreita\Documents\Codex\2026-10-11\task\clean-sources\Monotone_Light
+Session:         Monotone_Light
+Theory count:    1
+LOC (LF lines):  469
+Headline thms:   4
+Total stmts:     16   (lemma+theorem+corollary+proposition)
+README.md:       absent (optional)
+LICENSE:         yes
+Required files:  OK (ROOT, document/root.tex, document/root.bib present)
+Forbidden tokens: none (sorry, oops)
+
+AUDIT CLEAN

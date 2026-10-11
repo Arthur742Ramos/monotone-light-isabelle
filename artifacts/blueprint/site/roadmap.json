@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "project": "Monotone-light factorization",
+  "summary": {
+    "node_count": 7,
+    "complete_count": 7,
+    "ready_count": 0,
+    "blocked_count": 0,
+    "problem_count": 0,
+    "stale_count": 0,
+    "stage_count": 6
+  },
+  "metrics": {
+    "node_count": 7,
+    "formal_target_count": 7,
+    "proved_count": 7,
+    "found_count": 0,
+    "problem_count": 0,
+    "stale_count": 0,
+    "has_cycles": false,
+    "coverage_percent": 100
+  },
+  "suggested_next_task": null,
+  "suggested_path": [],
+  "cycles": [],
+  "stages": [
+    {
+      "index": 1,
+      "items": [
+        {
+          "node_id": "fibre-component",
+          "title": "Connected component within a point fibre",
+          "kind": "definition",
+          "stage": 1,
+          "status": "complete",
+          "formal_status": "proved",
+          "agent_status": "solved",
+          "target_fact": "Monotone_Light.fibre_component_def",
+          "blocked_by": [],
+          "blocks": 0,
+          "task_id": null,
+          "priority": null,
+          "difficulty": null,
+          "suggested_order": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "items": [
+        {
+          "node_id": "partition",
+          "title": "Fibres of the component projection",
+          "kind": "lemma",
+          "stage": 2,
+          "status": "complete",
+          "formal_status": "proved",
+          "agent_status": "solved",
+          "target_fact": "Monotone_Light.fibre_component_fibre",
+          "blocked_by": [],
+          "blocks": 0,
+          "task_id": null,
+          "priority": null,
+          "difficulty": null,
+          "suggested_order": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "items": [
+        {
+          "node_id": "closed-projection",
+          "title": "The component projection is closed",
+          "kind": "theorem",
+          "stage": 3,
+          "status": "complete",
+          "formal_status": "proved",
+          "agent_status": "solved",
+          "target_fact": "Monotone_Light.component_quotient_closed",
+          "blocked_by": [],
+          "blocks": 0,
+          "task_id": null,
+          "priority": null,
+          "difficulty": null,
+          "suggested_order": null
+        },
+        {
+          "node_id": "compact-middle",
+          "title": "The middle space is compact",
+          "kind": "theorem",
+          "stage": 3,
+          "status": "complete",
+          "formal_status": "proved",
+          "agent_status": "solved",
+          "target_fact": "Monotone_Light.component_quotient_compact",
+          "blocked_by": [],
+          "blocks": 0,
+          "task_id": null,
+          "priority": null,
+          "difficulty": null,
+          "suggested_order": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "items": [
+        {
+          "node_id": "middle-space",
+          "title": "The middle space is Hausdorff",
+          "kind": "theorem",
+          "stage": 4,
+          "status": "complete",
+          "formal_status": "proved",
+          "agent_status": "solved",
+          "target_fact": "Monotone_Light.component_quotient_Hausdorff",
+          "blocked_by": [],
+          "blocks": 0,
+          "task_id": null,
+          "priority": null,
+          "difficulty": null,
+          "suggested_order": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "items": [
+        {
+          "node_id": "factorization",
+          "title": "Monotone-light factorization",
+          "kind": "theorem",
+          "stage": 5,
+          "status": "complete",
+          "formal_status": "proved",
+          "agent_status": "solved",
+          "target_fact": "Monotone_Light.monotone_light_factorization",
+          "blocked_by": [],
+          "blocks": 0,
+          "task_id": null,
+          "priority": null,
+          "difficulty": null,
+          "suggested_order": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "items": [
+        {
+          "node_id": "uniqueness",
+          "title": "Uniqueness of the factorization up to homeomorphism",
+          "kind": "theorem",
+          "stage": 6,
+          "status": "complete",
+          "formal_status": "proved",
+          "agent_status": "solved",
+          "target_fact": "Monotone_Light.monotone_light_unique",
+          "blocked_by": [],
+          "blocks": 0,
+          "task_id": null,
+          "priority": null,
+          "difficulty": null,
+          "suggested_order": null
+        }
+      ]
+    }
+  ]
+}
