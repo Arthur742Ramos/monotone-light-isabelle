@@ -1,0 +1,40 @@
+{
+  "command": [
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\isabelle-native-bridge.py",
+    "lint",
+    "-v",
+    "-j1",
+    "-o",
+    "threads=1",
+    "-o",
+    "parallel_proofs=0",
+    "-o",
+    "quick_and_dirty=false",
+    "-o",
+    "skip_proofs=false",
+    "-o",
+    "document=false",
+    "-o",
+    "lint_bundles=afp_mandatory",
+    "-f",
+    "error",
+    "-r",
+    "json",
+    "-O",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\control\\negative-control.json",
+    "-D",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\lint-control"
+  ],
+  "started": "2026-10-11T20:35:05.759636+00:00",
+  "finished": "2026-10-11T20:35:42.019758+00:00",
+  "exit_status": 1,
+  "action": "negative-control",
+  "project": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\lint-control",
+  "native_environment": {
+    "ISABELLE_NATIVE_HOME": "C:/Users/arfreita/Documents/Codex/2026-10-06/task-4/toolchain/Isabelle2025-2",
+    "ISABELLE_NATIVE_BASH": "C:/Users/arfreita/AppData/Local/Programs/Isabelle2025-2/contrib/cygwin/bin/bash.exe",
+    "ISABELLE_NATIVE_USER_HOME": "C:/Users/arfreita/Documents/Codex/2026-10-11/task/native-user",
+    "ISABELLE_NATIVE_TMPDIR": "C:/Users/arfreita/Documents/Codex/2026-10-11/task/native-tmp"
+  }
+}

@@ -7,13 +7,29 @@
   <meta name="theme-color" content="#f8fafc" />
   <meta name="generator" content="IsabelleBlueprint" />
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="isabelle-blueprint-offline" content="true" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
+    integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    id="MathJax-script"
+  ></script>
   <script defer src="static/filters.js"></script>
   <script defer src="static/graph.js"></script>
   <script defer src="static/trends.js"></script>
   <script defer src="static/theme.js"></script>
 </head>
-<body data-offline="true">
+<body data-offline="false">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="container">
@@ -45,12 +61,12 @@
   when opened directly from disk.
 </p>
 
-  <script type="application/json" id="trend-data">{"entries": [{"branch": null, "commit_sha": null, "coverage_percent": null, "formal_target_count": 0, "found_count": 0, "has_cycles": false, "node_count": 6, "problem_count": 0, "proved_count": 0, "stale_count": 0, "timestamp": "2026-10-11T04:46:04Z"}, {"branch": null, "commit_sha": null, "coverage_percent": 0, "formal_target_count": 6, "found_count": 0, "has_cycles": false, "node_count": 6, "problem_count": 0, "proved_count": 0, "stale_count": 0, "timestamp": "2026-10-11T04:58:23Z"}, {"branch": null, "commit_sha": null, "coverage_percent": 0, "formal_target_count": 6, "found_count": 0, "has_cycles": false, "node_count": 6, "problem_count": 0, "proved_count": 0, "stale_count": 0, "timestamp": "2026-10-11T05:29:05Z"}, {"branch": null, "commit_sha": null, "coverage_percent": 100, "formal_target_count": 7, "found_count": 0, "has_cycles": false, "node_count": 7, "problem_count": 0, "proved_count": 7, "stale_count": 0, "timestamp": "2026-10-11T07:15:17Z"}]}</script>
+  <script type="application/json" id="trend-data">{"entries": [{"branch": null, "commit_sha": null, "coverage_percent": 100, "formal_target_count": 7, "found_count": 0, "has_cycles": false, "node_count": 7, "problem_count": 0, "proved_count": 7, "stale_count": 0, "timestamp": "2026-10-11T20:43:25Z"}]}</script>
   <section class="trend-summary" aria-label="Latest trend snapshot">
     <div><span>Latest coverage</span><strong>100%</strong></div>
     <div><span>Latest problems</span><strong>0</strong></div>
-    <div><span>Recorded runs</span><strong>4</strong></div>
-<div><span>Coverage change</span><strong class="delta-positive">+100 pp</strong></div>  </section>
+    <div><span>Recorded runs</span><strong>1</strong></div>
+  </section>
   <section class="trend-chart" data-trend-chart>
     <div class="section-heading">
       <div><p class="eyebrow">Project momentum</p><h2>Coverage and problems over time</h2></div>
@@ -79,40 +95,13 @@
       </thead>
       <tbody>
           <tr>
-            <th scope="row">2026-10-11T07:15:17Z</th>
+            <th scope="row">2026-10-11T20:43:25Z</th>
             <td><code>local</code></td>
             <td>-</td>
             <td>100%</td>
             <td>7</td>
             <td>0</td>
             <td>7</td>
-          </tr>
-          <tr>
-            <th scope="row">2026-10-11T05:29:05Z</th>
-            <td><code>local</code></td>
-            <td>-</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <th scope="row">2026-10-11T04:58:23Z</th>
-            <td><code>local</code></td>
-            <td>-</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <th scope="row">2026-10-11T04:46:04Z</th>
-            <td><code>local</code></td>
-            <td>-</td>
-            <td>-</td>
-            <td>0</td>
-            <td>0</td>
-            <td>6</td>
           </tr>
       </tbody>
     </table>

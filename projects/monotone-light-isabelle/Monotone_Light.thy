@@ -83,6 +83,7 @@ next
     by (simp add: x(2) fibre_component_connected)
 qed
 
+text_raw \<open>\ProofNeedspace{8\baselineskip}\<close>
 lemma fibre_component_closed:
   assumes "continuous_map X Y f" "Hausdorff_space Y"
   shows "closedin X (fibre_component X f x)"
@@ -320,6 +321,7 @@ proof -
   qed
 qed
 
+text_raw \<open>\ProofNeedspace{17\baselineskip}\<close>
 theorem monotone_light_factorization:
   assumes "compact_space X" "Hausdorff_space X"
     "continuous_map X Y f" "Hausdorff_space Y"

@@ -1,0 +1,6 @@
+COMMAND ["C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\isabelle-native-bridge.py", "lint", "-v", "-j1", "-o", "threads=1", "-o", "parallel_proofs=0", "-o", "quick_and_dirty=false", "-o", "skip_proofs=false", "-o", "document=false", "-o", "lint_bundles=afp_mandatory", "-f", "error", "-r", "json", "-O", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\control\\negative-control.json", "-D", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\lint-control"]
+Running Lint_Control ...
+Finished Lint_Control (0:00:04 elapsed time)
+Linting Lint_Control
+Processing Lint_Control.Lint_Control...
+EXIT_STATUS 1

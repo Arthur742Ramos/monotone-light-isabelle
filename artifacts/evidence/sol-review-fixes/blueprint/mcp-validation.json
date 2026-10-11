@@ -1,0 +1,34 @@
+{
+  "project": "Monotone-light factorization",
+  "health": "complete",
+  "metrics": {
+    "node_count": 7,
+    "formal_target_count": 7,
+    "proved_count": 7,
+    "found_count": 0,
+    "problem_count": 0,
+    "stale_count": 0,
+    "has_cycles": false,
+    "coverage_percent": 100
+  },
+  "ready_task_count": 0,
+  "next_task": null,
+  "top_ready_tasks": [],
+  "filters": {
+    "kind": [],
+    "priority": [],
+    "difficulty": [],
+    "memory_state": [],
+    "last_outcome": [],
+    "exclude_node": []
+  },
+  "filtered_ready_task_count": 0,
+  "message": "",
+  "snapshot": {
+    "project_root": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle",
+    "generated_at": "2026-10-11T20:55:19.461972Z",
+    "input_signature": "676b4bd4bd94e26fae87d6deb378429ed863b3f6f1278b5357cedfab126ee3b1",
+    "check_report": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\build\\check_report.json",
+    "check_report_exists": true
+  }
+}

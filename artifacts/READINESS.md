@@ -1,6 +1,33 @@
 # Readiness evidence
 
-Local submission preparation is complete. The entry remains unsubmitted, and human approval/review is pending.
+All four Astra findings have been addressed. The final source retains the
+reviewed theorem and proofs; its only theory changes are two document commands.
+Human review and Arthur's submission approval remain pending.
+
+Current Sol verification evidence is in [sol-review-fixes](evidence/sol-review-fixes/).
+
+| Current check | Actual result | Evidence |
+| --- | --- | --- |
+| Full session/PDF | Pass, complete 13-page proof | [build](evidence/sol-review-fixes/session/build.log), [invocation](evidence/sol-review-fixes/session/build-invocation.json) |
+| Exact archive rebuild | Pass in separate owned home, complete 13-page PDF | [build](evidence/sol-review-fixes/archive-build/build.log), [invocation](evidence/sol-review-fixes/archive-build/build-invocation.json) |
+| Sources and PDF QA | Five-file archive matches source bytes; all 13 pages inspected; archive renders identical | [manifest](evidence/sol-review-fixes/Monotone_Light.tar.manifest.json), [audit](evidence/sol-review-fixes/final-audit.json) |
+| Pinned mandatory lint | Entry findings empty; expected control rejection with raw exit 1 | [entry](evidence/sol-review-fixes/lint/lint.json), [control](evidence/sol-review-fixes/control/negative-control.json), [control invocation](evidence/sol-review-fixes/control/negative-control-invocation.json) |
+| Licence/provenance | Exact MIT notice; unchanged upstream files match pinned source | [verification](evidence/sol-review-fixes/provenance-verification.json), [notice](../tools/ISABELLE-LINTER-LICENSE), [pins](../tools/inputs.json) |
+| Released Blueprint | Seven current proved facts, empty oracles | [checker](evidence/sol-review-fixes/blueprint-check-report.json), [commands](evidence/sol-review-fixes/blueprint/invocations.json) |
+| Read-only MCP | Complete; 7 proved, 0 stale, 0 ready tasks; no write tools | [validation](evidence/sol-review-fixes/blueprint/mcp-validation.json), [probe](evidence/sol-review-fixes/blueprint/mcp.log) |
+| Astra review | No mathematical blocker; all four findings fixed by Sol | [review scope](../projects/monotone-light-isabelle/ASTRA_REVIEW.md), [replay recipe](../tools/REPRODUCING.md) |
+
+The fibre-closedness statement is together on page 5, the complete factorization
+statement is together on page 10, and the duplicate section heading is removed.
+The complete PDF SHA-256 is `4541fdf62983c759465e13dc6bef83934fc9640e2f1e2d82952f0be29db5252f`;
+the clean archive SHA-256 is `0eabfd91f2318d8f5a3d97ccd325670ad920a108cdd277cbaf9faed2a6338458`.
+Only the offline Tectonic engine is claimed as tested on this host; its recorded
+source/settings and font manifest are included. Standard LaTeX remains the normal
+reviewer route. Preserved failed replay diagnostics are labelled separately.
+
+## Original baseline evidence
+
+The following table records the original run before the presentation/tooling fixes.
 
 | Check | Actual result | Evidence |
 | --- | --- | --- |

@@ -5,6 +5,8 @@ blueprint = "blueprint.md"
 [isabelle]
 session = "Monotone_Light"
 version = "Isabelle2025-2"
+executable = "isabelle-native"
+timeout = 600
 dirs = [".", "../../../afp-2026-10-06/thys/Topological_Groups"]
 
 [output]

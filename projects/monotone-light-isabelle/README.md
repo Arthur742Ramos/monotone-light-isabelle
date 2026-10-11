@@ -8,7 +8,7 @@ The theory contains the definitions, the closed-projection argument, compactness
 
 ## Prerequisites and build
 
-Use Isabelle2025-2 and the matching AFP release. Development uses AFP's 2026-10-06 release of `Topological_Groups`, whose quotient topology is imported rather than duplicated. With `AFP` pointing to the extracted AFP root:
+Use Isabelle2025-2 revision `89701cf1768e` and AFP's [dated 2026-10-06 archive](https://isa-afp.org/release/afp-2026-10-06.tar.gz), SHA-256 `d6f917ba347c5f8aa5b3b0b95686edc96c8d977dcaed4bd01e6fa555d450996e`. Its `Topological_Groups` quotient topology is imported rather than duplicated. From this project directory, with `AFP` pointing to the extracted AFP root:
 
 ```sh
 isabelle build -d "$AFP/thys/Topological_Groups" -D .
@@ -18,7 +18,7 @@ The parent is HOL-Analysis through Topological_Groups. Existing matching heaps c
 
 ## Blueprint
 
-`blueprint.md` records the informal proof and dependencies. Install the released `isabelle-blueprint[mcp]==1.19.0`; its source release is tagged `v1.19.0` in Arthur742Ramos/isa-blueprint. Configure the AFP dependency directory in `isabelle-blueprint.toml`, then run:
+`blueprint.md` records the informal proof and dependencies. The released `v1.19.0` tag resolves to `6f52dc13d92d03f44a47b76609cf6ae7c55ecae2`. The public repository's [complete replay recipe](https://github.com/Arthur742Ramos/monotone-light-isabelle/blob/verified-formalization/tools/REPRODUCING.md) pins installation from that commit, publishes the native launcher, and gives clean/control/MCP commands. Configure the AFP directory in `isabelle-blueprint.toml`; its `isabelle-native` executable uses the included launcher. Once configured, run:
 
 ```sh
 isabelle-blueprint lint .

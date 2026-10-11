@@ -1,5 +1,8 @@
 /*  Title:      linter_base/src/token_markup.scala
     Author:     Fabian Huch
+    Licence:    MIT; see ISABELLE-LINTER-LICENSE
+    Upstream:   isabelle-prover/isabelle-linter c9983adc5c51a6455f702bb58c9f960d425a2af3
+    Adaptation: transparent Isabelle2025-2 command_range wrappers
 
 Maps markup trees into outer syntax tokens.
 */

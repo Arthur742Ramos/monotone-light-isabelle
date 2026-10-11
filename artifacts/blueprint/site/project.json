@@ -1,7 +1,7 @@
 {
   "name": "Monotone-light factorization",
   "source_files": [
-    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md"
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md"
   ],
   "nodes": [
     {
@@ -21,13 +21,13 @@
         "blueprint": "written",
         "formal": "proved",
         "agent": "solved",
-        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "last_checked": "2026-10-11T20:40:22.984462+00:00",
         "check_error": null
       },
       "tags": [],
       "effort": null,
       "source": {
-        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md",
         "line": 13
       }
     },
@@ -50,13 +50,13 @@
         "blueprint": "written",
         "formal": "proved",
         "agent": "solved",
-        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "last_checked": "2026-10-11T20:40:22.984462+00:00",
         "check_error": null
       },
       "tags": [],
       "effort": null,
       "source": {
-        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md",
         "line": 22
       }
     },
@@ -79,13 +79,13 @@
         "blueprint": "written",
         "formal": "proved",
         "agent": "solved",
-        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "last_checked": "2026-10-11T20:40:22.984462+00:00",
         "check_error": null
       },
       "tags": [],
       "effort": null,
       "source": {
-        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md",
         "line": 36
       }
     },
@@ -108,13 +108,13 @@
         "blueprint": "written",
         "formal": "proved",
         "agent": "solved",
-        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "last_checked": "2026-10-11T20:40:22.984462+00:00",
         "check_error": null
       },
       "tags": [],
       "effort": null,
       "source": {
-        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md",
         "line": 55
       }
     },
@@ -137,13 +137,13 @@
         "blueprint": "written",
         "formal": "proved",
         "agent": "solved",
-        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "last_checked": "2026-10-11T20:40:22.984462+00:00",
         "check_error": null
       },
       "tags": [],
       "effort": null,
       "source": {
-        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md",
         "line": 68
       }
     },
@@ -168,13 +168,13 @@
         "blueprint": "written",
         "formal": "proved",
         "agent": "solved",
-        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "last_checked": "2026-10-11T20:40:22.984462+00:00",
         "check_error": null
       },
       "tags": [],
       "effort": null,
       "source": {
-        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md",
         "line": 82
       }
     },
@@ -197,13 +197,13 @@
         "blueprint": "written",
         "formal": "proved",
         "agent": "solved",
-        "last_checked": "2026-10-11T07:01:05.669061+00:00",
+        "last_checked": "2026-10-11T20:40:22.984462+00:00",
         "check_error": null
       },
       "tags": [],
       "effort": 3,
       "source": {
-        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\monorepo\\projects\\monotone-light-isabelle\\blueprint.md",
+        "file": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle\\blueprint.md",
         "line": 100
       }
     }

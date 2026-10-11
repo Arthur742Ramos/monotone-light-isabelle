@@ -1,0 +1,56 @@
+{
+  "exact_mit_notice": true,
+  "adapted_file_matches_public_source": true,
+  "upstream_source_comparisons": [
+    {
+      "path": "src/ast.scala",
+      "pinned_sha256": "2f06d29c13f7244eb9630bc96fce937aa25a7f2743ed44c6adae11b0094d296f",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/lint.scala",
+      "pinned_sha256": "7294161d2c03c7cc93ee47886f5078e86aca276b32c872ba5d19becbac002833",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/lint_description.scala",
+      "pinned_sha256": "86a88097d35036fd5327d0d5e6864f659cefc054b266351861f9c66817509f31",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/lint_store.scala",
+      "pinned_sha256": "aef2ac0fda75eca4276cb1b3a906c7da35a34e8e28c268ce9cbfea02b723fe6d",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/linter.scala",
+      "pinned_sha256": "45eb75b358a8f1fc3a1e69ed17cdcf42bc4a7cca64f0961c1699761c6beb8b85",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/lints.scala",
+      "pinned_sha256": "b5d8b96bb1454b3d7a473515b8266c1ca40c4b9e9fab1946765cdb7288fb05ea",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/markup.scala",
+      "pinned_sha256": "af1916150e270e783c52cebf48e80dccc9a0afeaf20a94f4e0326c83d4f5afed",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/parsers.scala",
+      "pinned_sha256": "d66926318c5958da90472f9a68fe0403b96a35078cb14d7ef10ef9757fca9537",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/presenter.scala",
+      "pinned_sha256": "7de2594ad3afd433076c6a188e8d9d2c32322c1667b5ee68e885bc92caa653fb",
+      "old_source_matches_pin": true
+    },
+    {
+      "path": "src/utils.scala",
+      "pinned_sha256": "016347fdd32838040652917a8a21ae070f3dfd49085544b43b39d12326c481a3",
+      "old_source_matches_pin": true
+    }
+  ]
+}

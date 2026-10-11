@@ -1,46 +1,7 @@
 {
   "entries": [
     {
-      "timestamp": "2026-10-11T04:46:04Z",
-      "commit_sha": null,
-      "branch": null,
-      "coverage_percent": null,
-      "node_count": 6,
-      "formal_target_count": 0,
-      "proved_count": 0,
-      "found_count": 0,
-      "problem_count": 0,
-      "stale_count": 0,
-      "has_cycles": false
-    },
-    {
-      "timestamp": "2026-10-11T04:58:23Z",
-      "commit_sha": null,
-      "branch": null,
-      "coverage_percent": 0,
-      "node_count": 6,
-      "formal_target_count": 6,
-      "proved_count": 0,
-      "found_count": 0,
-      "problem_count": 0,
-      "stale_count": 0,
-      "has_cycles": false
-    },
-    {
-      "timestamp": "2026-10-11T05:29:05Z",
-      "commit_sha": null,
-      "branch": null,
-      "coverage_percent": 0,
-      "node_count": 6,
-      "formal_target_count": 6,
-      "proved_count": 0,
-      "found_count": 0,
-      "problem_count": 0,
-      "stale_count": 0,
-      "has_cycles": false
-    },
-    {
-      "timestamp": "2026-10-11T07:15:17Z",
+      "timestamp": "2026-10-11T20:43:25Z",
       "commit_sha": null,
       "branch": null,
       "coverage_percent": 100,

@@ -1,0 +1,8 @@
+Monotone-light factorization: 0 error(s), 7 warning(s), 0 info
+  warning: stale-formal-status [closed-projection] - formal status is 'stale'; re-run check after dependency changes
+  warning: stale-formal-status [compact-middle] - formal status is 'stale'; re-run check after dependency changes
+  warning: stale-formal-status [factorization] - formal status is 'stale'; re-run check after dependency changes
+  warning: stale-formal-status [fibre-component] - formal status is 'stale'; re-run check after dependency changes
+  warning: stale-formal-status [middle-space] - formal status is 'stale'; re-run check after dependency changes
+  warning: stale-formal-status [partition] - formal status is 'stale'; re-run check after dependency changes
+  warning: stale-formal-status [uniqueness] - formal status is 'stale'; re-run check after dependency changes

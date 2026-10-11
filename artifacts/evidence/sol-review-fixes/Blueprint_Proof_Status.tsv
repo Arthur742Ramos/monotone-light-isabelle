@@ -1,0 +1,7 @@
+ISABELLE_BLUEPRINT_FACT	middle-space	Monotone_Light.component_quotient_Hausdorff	proved	-
+ISABELLE_BLUEPRINT_FACT	closed-projection	Monotone_Light.component_quotient_closed	proved	-
+ISABELLE_BLUEPRINT_FACT	compact-middle	Monotone_Light.component_quotient_compact	proved	-
+ISABELLE_BLUEPRINT_FACT	fibre-component	Monotone_Light.fibre_component_def	proved	-
+ISABELLE_BLUEPRINT_FACT	partition	Monotone_Light.fibre_component_fibre	proved	-
+ISABELLE_BLUEPRINT_FACT	factorization	Monotone_Light.monotone_light_factorization	proved	-
+ISABELLE_BLUEPRINT_FACT	uniqueness	Monotone_Light.monotone_light_unique	proved	-

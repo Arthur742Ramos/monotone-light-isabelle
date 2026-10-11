@@ -1,0 +1,1 @@
+{"reports":[{"theory":"Lint_Control.Lint_Control","results":[{"name":"global_attribute_on_unnamed_lemma","stopPosition":"4:12","stopOffset":130,"startOffset":126,"severity":"error","startPosition":"4:8","commands":[-3]}]}]}

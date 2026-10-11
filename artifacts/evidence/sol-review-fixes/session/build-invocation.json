@@ -1,0 +1,29 @@
+{
+  "command": [
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\isabelle-native-bridge.py",
+    "build",
+    "-v",
+    "-o",
+    "document=pdf",
+    "-o",
+    "document_build=owned_tectonic",
+    "-o",
+    "document_output=C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\session\\document",
+    "-d",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\afp-2026-10-06\\thys\\Topological_Groups",
+    "-D",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"
+  ],
+  "started": "2026-10-11T20:26:08.555036+00:00",
+  "finished": "2026-10-11T20:29:01.806951+00:00",
+  "exit_status": 0,
+  "action": "build",
+  "project": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle",
+  "native_environment": {
+    "ISABELLE_NATIVE_HOME": "C:/Users/arfreita/Documents/Codex/2026-10-06/task-4/toolchain/Isabelle2025-2",
+    "ISABELLE_NATIVE_BASH": "C:/Users/arfreita/AppData/Local/Programs/Isabelle2025-2/contrib/cygwin/bin/bash.exe",
+    "ISABELLE_NATIVE_USER_HOME": "C:/Users/arfreita/Documents/Codex/2026-10-11/task/native-user",
+    "ISABELLE_NATIVE_TMPDIR": "C:/Users/arfreita/Documents/Codex/2026-10-11/task/native-tmp"
+  }
+}

@@ -2,6 +2,10 @@
 \usepackage[T1]{fontenc}
 \usepackage{isabelle,isabellesym}
 \usepackage{amsmath,amssymb}
+% Keep short formal statements together without another package dependency.
+\newcommand{\ProofNeedspace}[1]{\par\begingroup
+  \dimen0=#1\relax\dimen2=\pagegoal\advance\dimen2 by -\pagetotal
+  \ifdim\dimen0>\dimen2\newpage\fi\endgroup}
 \usepackage{pdfsetup}
 \urlstyle{rm}
 \isabellestyle{it}
@@ -87,8 +91,8 @@ the comparison map. It is a continuous bijection from compact $M$
 to a Hausdorff space, hence a homeomorphism. Surjectivity of $q$
 makes that comparison unique on the carrier.
 
-\section{Formal development}
-All new definitions, statements and complete proofs are printed below.
+All new definitions, statements and complete proofs follow in the formal
+development.
 \input{session}
 \bibliographystyle{abbrv}
 \bibliography{root}

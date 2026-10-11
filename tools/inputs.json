@@ -1,0 +1,24 @@
+{
+  "isabelle": {"version": "Isabelle2025-2", "revision": "89701cf1768e"},
+  "afp": {
+    "date": "2026-10-06",
+    "url": "https://isa-afp.org/release/afp-2026-10-06.tar.gz",
+    "sha256": "d6f917ba347c5f8aa5b3b0b95686edc96c8d977dcaed4bd01e6fa555d450996e"
+  },
+  "linter": {
+    "repository": "https://github.com/isabelle-prover/isabelle-linter",
+    "revision": "c9983adc5c51a6455f702bb58c9f960d425a2af3",
+    "url": "https://github.com/isabelle-prover/isabelle-linter/archive/c9983adc5c51a6455f702bb58c9f960d425a2af3.tar.gz",
+    "sha256": "83dc386d6e9dcbfa9f820abddac31c1bedffa46f1f74265a8ccf9007ff9ca2f1",
+    "upstream_token_markup_sha256": "38fd0b84e055ad591cdf9740164c666ad1edc5fc74ef163fd6bf5e0032c897e5",
+    "licence_sha256": "6050993836f8fdf9841dffe823fd80a538feded38d2345affbe59d8a9f17bb95",
+    "bundle": "afp_mandatory",
+    "patch": "token_markup.patch"
+  },
+  "blueprint": {
+    "version": "1.19.0",
+    "tag": "v1.19.0",
+    "revision": "6f52dc13d92d03f44a47b76609cf6ae7c55ecae2",
+    "repository": "https://github.com/Arthur742Ramos/isa-blueprint"
+  }
+}

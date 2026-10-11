@@ -1,0 +1,36 @@
+COMMAND ["C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\blueprint-env\\Scripts\\python.exe", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\tools\\isabelle-native-bridge.py", "build", "-v", "-o", "document=pdf", "-o", "document_build=owned_tectonic", "-o", "document_output=C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\fix-validation\\session\\document", "-d", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\afp-2026-10-06\\thys\\Topological_Groups", "-D", "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-11\\task\\public-mirror\\projects\\monotone-light-isabelle"]
+Started at Sun Oct 11 17:19:26 GMT-3 2026 (polyml-5.9.2_x86_64_32-windows on CPC-arfre-036B6)
+ISABELLE_TOOL_JAVA_OPTIONS="-Djava.awt.headless=true -Xms128m -Xmx768m -Xss16m"
+ISABELLE_BUILD_OPTIONS=""
+
+ML_PLATFORM="x86_64_32-windows"
+ML_HOME="/cygdrive/c/Users/arfreita/Documents/Codex/2026-10-06/task-4/toolchain/Isabelle2025-2/contrib/polyml-5.9.2-2/x86_64_32-windows"
+ML_SYSTEM="polyml-5.9.2"
+ML_OPTIONS="--minheap 256 --maxheap 1792"
+
+Session Pure/Pure
+Session Misc/Tools
+Session HOL/HOL (main)
+Session HOL/HOL-Cardinals (timing)
+Session HOL/HOL-Library (main timing)
+Session HOL/HOL-Combinatorics (main timing)
+Session HOL/HOL-Computational_Algebra (main timing)
+Session HOL/HOL-Algebra (main timing)
+Session HOL/HOL-Decision_Procs (timing)
+Session HOL/HOL-Real_Asymp
+Session HOL/HOL-Analysis (main timing)
+Session AFP/Topological_Groups
+Session AFP/Monotone_Light
+Building Monotone_Light ...
+Monotone_Light: theory Monotone_Light.Monotone_Light
+Monotone_Light: theory Monotone_Light.Monotone_Light 100% (5.251s cumulated time)
+Illegal character ":" in path element "C:\Users\arfreita\Documents\Codex\2026-10-11\task\fix-validation\session\document"
+The error(s) above occurred in "C:\Users\arfreita\Documents\Codex\2026-10-11\task\fix-validation\session\document"
+Monotone_Light FAILED (see also "isabelle build_log -H Error Monotone_Light")
+*** Illegal character ":" in path element "C:\Users\arfreita\Documents\Codex\2026-10-11\task\fix-validation\session\document"
+*** The error(s) above occurred in "C:\Users\arfreita\Documents\Codex\2026-10-11\task\fix-validation\session\document"
+Unfinished session(s): Monotone_Light
+
+Finished at Sun Oct 11 17:21:16 GMT-3 2026
+0:01:50 elapsed time
+EXIT_STATUS 1

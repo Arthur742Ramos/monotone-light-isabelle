@@ -1,0 +1,5 @@
+title = Owned offline Tectonic document engine
+module = $OWNED_TECTONIC_JAR
+requirements = env:ISABELLE_SCALA_JAR
+sources = src/owned_tectonic.scala
+services = Owned_Tectonic_Engine

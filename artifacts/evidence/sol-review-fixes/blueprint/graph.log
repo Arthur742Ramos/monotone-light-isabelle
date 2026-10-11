@@ -1,0 +1,5 @@
+note: graphviz `dot` not found; install it for SVG output
+dot -> C:\Users\arfreita\Documents\Codex\2026-10-11\task\public-mirror\projects\monotone-light-isabelle\build\graph.dot
+json -> C:\Users\arfreita\Documents\Codex\2026-10-11\task\public-mirror\projects\monotone-light-isabelle\build\graph.json
+mermaid -> C:\Users\arfreita\Documents\Codex\2026-10-11\task\public-mirror\projects\monotone-light-isabelle\build\graph.mmd
+graphml -> C:\Users\arfreita\Documents\Codex\2026-10-11\task\public-mirror\projects\monotone-light-isabelle\build\graph.graphml
